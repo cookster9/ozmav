@@ -1,0 +1,54 @@
+Needs to be able to:
+Display/save off the current animation frame data for a certain animation
+Edit the translation/rotation values on the fly
+	Make new buttons/keybinds for editing animation
+		Add/subtract from a certain value
+		Toggle between rotation/translation? Look at animation format agian
+Be able to reload the animation on the fly or with some kind of "refresh"
+If saving off, will need the app to look to the new animation location instead of in the ROM
+If directly editing the rom, will need to inject the new data or just use that as the save point
+
+Link animation format:
+
+-XYZ Translation-
+
+Just three signed 16-bit values. XX XX YY YY ZZ ZZ.
+
+XX being the X translation, YY being the Y translation, ZZ being the Z translation. These are relative to Link's current position on a map. When the animation is done playing, he will return to his original position.
+
+-Limb rotations-
+
+Three unsigned 16-bit values for each limb. XX XX YY YY ZZ ZZ.
+
+XX being the X rotation, YY being the Y rotation, ZZ being the Z rotation. Link has 0x15 limbs, so this section is 0x7E bytes long (0x15 * 6).
+
+Format (provided by Flotonic; offsets are relative to the start of each frame):
+0x6 = Link's entire rotation.
+0xC = Waist
+0x12 = Waist (but doesn't rotate the waist Display List)
+0x18 = Right Thigh
+0x1E = Right Shin
+0x24 = Right Foot
+0x2A = Left Thigh
+0x30 = Left Shin
+0x36 = Left Foot
+0x3C = Torso
+0x42 = Head
+0x48 = Hat
+0x4E = Shirt Collar
+0x54 = Left Shoulder
+0x5A = Left Forearm
+0x60 = Left Hand
+0x66 = Right Shoulder
+0x6C = Right Forearm
+0x72 = Right Hand
+0x78 = Items on Back (Sheath and Shield)
+0x7E = Shirt Collar (again)
+
+-Facial Behavior-
+
+Two bytes.
+
+00 PP
+
+PP = Property. This changes the appearance of Link's eyes.

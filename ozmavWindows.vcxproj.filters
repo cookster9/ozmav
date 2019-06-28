@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="azunyan8\src\audio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="azunyan8\src\chip8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="azunyan8\src\disasm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="azunyan8\src\draw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="azunyan8\src\filebrowse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="azunyan8\src\gui.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="azunyan8\src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="azunyan8\src\memview.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="azunyan8\src\program.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="azunyan8\src\rvl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="azunyan8\src\shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="badrdp\combine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="badrdp\crc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="badrdp\dlparse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="badrdp\dump.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="badrdp\f3d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="badrdp\f3dex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="badrdp\f3dex2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="badrdp\gdp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="badrdp\gsp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="badrdp\macro.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="badrdp\matrix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="badrdp\opengl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="badrdp\rdp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlviewer\camera.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlviewer\confunc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlviewer\dlist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlviewer\draw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlviewer\hud.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlviewer\hud_menu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlviewer\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlviewer\mouse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlviewer\oz.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlviewer\__linux.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlviewer\__win32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="misaka\msk_base.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="misaka\msk_console.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="misaka\msk_ui.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ozmav2\camera.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ozmav2\confunc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ozmav2\draw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ozmav2\hud.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ozmav2\hud_menu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ozmav2\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ozmav2\mips-eval.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ozmav2\mouse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ozmav2\oz.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ozmav2\zactors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ozmav2\zelda.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ozmav2\__linux.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ozmav2\__win32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sf64toolkit\camera.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sf64toolkit\draw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sf64toolkit\f3dex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sf64toolkit\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sf64toolkit\n64sums.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sf64toolkit\oz.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sf64toolkit\sf64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sf64toolkit\sf64_viewer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sf64toolkit\__linux.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sf64toolkit\__win32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sm64toz64\actors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sm64toz64\collision.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sm64toz64\dlist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sm64toz64\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sm64toz64\script.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zsaten\camera.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zsaten\hud.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zsaten\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zsaten\memwatch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zsaten\mips-eval.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zsaten\oz.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zsaten\render.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zsaten\shared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zsaten\zactors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zsaten\zelda.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zsaten\zold.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zsaten\__linux.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zsaten\__win32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="azunyan8\src\audio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="azunyan8\src\chip8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="azunyan8\src\disasm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="azunyan8\src\draw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="azunyan8\src\filebrowse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="azunyan8\src\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="azunyan8\src\gui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="azunyan8\src\memview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="azunyan8\src\program.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="azunyan8\src\rvl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="azunyan8\src\shared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\badrdp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\combine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\crc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\dlparse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\dump.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\f3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\f3dex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\f3dex2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\gbi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\gdp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\gsp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\macro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\macro_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\opengl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="badrdp\rdp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlviewer\badrdp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlviewer\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlviewer\confunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlviewer\dlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlviewer\draw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlviewer\font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlviewer\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlviewer\hud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlviewer\hud_menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlviewer\misaka.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlviewer\mouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlviewer\msk_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlviewer\oz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlviewer\__linux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlviewer\__win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misaka\misaka.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misaka\msk_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misaka\msk_console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="misaka\msk_ui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\badrdp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\confunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\draw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\hud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\hud_menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\mips-eval.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\mips.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\misaka.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\mouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\oz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\r3400i.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\zactors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\zelda.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\zelda_cmb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\zelda_ver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\__linux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ozmav2\__win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sf64toolkit\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sf64toolkit\draw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sf64toolkit\f3dex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sf64toolkit\f3dex_cmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sf64toolkit\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sf64toolkit\main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sf64toolkit\misaka.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sf64toolkit\n64sums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sf64toolkit\oz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sf64toolkit\sf64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sf64toolkit\sf64_ver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sf64toolkit\sf64_viewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sf64toolkit\__linux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sf64toolkit\__win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sm64toz64\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sm64toz64\n64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sm64toz64\sm64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\badrdp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\hud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\memwatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\mips-eval.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\mips.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\misaka.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\oz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\r3400i.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\shared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\zactors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\zelda.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\zelda_ver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\zold.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\__linux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zsaten\__win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

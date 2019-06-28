@@ -9,8 +9,11 @@ enum { false, true };
 
 #ifdef WIN32
 #include "__win32.h"
+#include "io.h"
+#include "windows.h"
 #else
 #include "__linux.h"
+#include <unistd.h>
 #endif
 
 #include <stdio.h>
@@ -18,12 +21,11 @@ enum { false, true };
 #include <string.h>
 #include <math.h>
 #include <stdarg.h>
-#include <unistd.h>
 #include <ctype.h>
 #include <time.h>
 
+#include <GL/glew.h>
 #include <GL/gl.h>
-#include <GL/glext.h>
 
 #include "badrdp.h"
 #include "misaka.h"

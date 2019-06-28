@@ -1,0 +1,34 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/FindGLEW.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/FindPNG.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/SelectLibraryConfigurations.cmake
+C:/Program Files/vcpkg-master/packages/glew_x86-windows/share/glew/CopyImportedTargetProperties.cmake
+C:/Program Files/vcpkg-master/packages/glew_x86-windows/share/glew/glew-config.cmake
+C:/Program Files/vcpkg-master/packages/glew_x86-windows/share/glew/glew-targets-debug.cmake
+C:/Program Files/vcpkg-master/packages/glew_x86-windows/share/glew/glew-targets-release.cmake
+C:/Program Files/vcpkg-master/packages/glew_x86-windows/share/glew/glew-targets.cmake
+C:/Users/Andrew/source/repos/ozmav/zsaten/CMakeLists.txt
+C:/Users/Andrew/source/repos/ozmav/zsaten/binaries/CMakeFiles/3.15.0-rc2/CMakeCCompiler.cmake
+C:/Users/Andrew/source/repos/ozmav/zsaten/binaries/CMakeFiles/3.15.0-rc2/CMakeCXXCompiler.cmake
+C:/Users/Andrew/source/repos/ozmav/zsaten/binaries/CMakeFiles/3.15.0-rc2/CMakeRCCompiler.cmake
+C:/Users/Andrew/source/repos/ozmav/zsaten/binaries/CMakeFiles/3.15.0-rc2/CMakeSystem.cmake

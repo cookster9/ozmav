@@ -1,0 +1,5 @@
+C:/Users/Andrew/source/repos/ozmav/zsaten/binaries/CMakeFiles/zsaten.dir
+C:/Users/Andrew/source/repos/ozmav/zsaten/binaries/CMakeFiles/ALL_BUILD.dir
+C:/Users/Andrew/source/repos/ozmav/zsaten/binaries/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Andrew/source/repos/ozmav/zsaten/binaries/badrdp/CMakeFiles/badrdp.dir
+C:/Users/Andrew/source/repos/ozmav/zsaten/binaries/misaka/CMakeFiles/misaka.dir

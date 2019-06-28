@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{17488B68-49FC-4B45-9D06-440B193B8BB4}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="azunyan8\src\audio.c" />
+    <ClCompile Include="azunyan8\src\chip8.c" />
+    <ClCompile Include="azunyan8\src\disasm.c" />
+    <ClCompile Include="azunyan8\src\draw.c" />
+    <ClCompile Include="azunyan8\src\filebrowse.c" />
+    <ClCompile Include="azunyan8\src\gui.c" />
+    <ClCompile Include="azunyan8\src\main.c" />
+    <ClCompile Include="azunyan8\src\memview.c" />
+    <ClCompile Include="azunyan8\src\program.c" />
+    <ClCompile Include="azunyan8\src\rvl.c" />
+    <ClCompile Include="azunyan8\src\shared.c" />
+    <ClCompile Include="badrdp\combine.c" />
+    <ClCompile Include="badrdp\crc.c" />
+    <ClCompile Include="badrdp\dlparse.c" />
+    <ClCompile Include="badrdp\dump.c" />
+    <ClCompile Include="badrdp\f3d.c" />
+    <ClCompile Include="badrdp\f3dex.c" />
+    <ClCompile Include="badrdp\f3dex2.c" />
+    <ClCompile Include="badrdp\gdp.c" />
+    <ClCompile Include="badrdp\gsp.c" />
+    <ClCompile Include="badrdp\macro.c" />
+    <ClCompile Include="badrdp\matrix.c" />
+    <ClCompile Include="badrdp\opengl.c" />
+    <ClCompile Include="badrdp\rdp.c" />
+    <ClCompile Include="dlviewer\camera.c" />
+    <ClCompile Include="dlviewer\confunc.c" />
+    <ClCompile Include="dlviewer\dlist.c" />
+    <ClCompile Include="dlviewer\draw.c" />
+    <ClCompile Include="dlviewer\hud.c" />
+    <ClCompile Include="dlviewer\hud_menu.c" />
+    <ClCompile Include="dlviewer\main.c" />
+    <ClCompile Include="dlviewer\mouse.c" />
+    <ClCompile Include="dlviewer\oz.c" />
+    <ClCompile Include="dlviewer\__linux.c" />
+    <ClCompile Include="dlviewer\__win32.c" />
+    <ClCompile Include="misaka\msk_base.c" />
+    <ClCompile Include="misaka\msk_console.c" />
+    <ClCompile Include="misaka\msk_ui.c" />
+    <ClCompile Include="ozmav2\camera.c" />
+    <ClCompile Include="ozmav2\confunc.c" />
+    <ClCompile Include="ozmav2\draw.c" />
+    <ClCompile Include="ozmav2\hud.c" />
+    <ClCompile Include="ozmav2\hud_menu.c" />
+    <ClCompile Include="ozmav2\main.c" />
+    <ClCompile Include="ozmav2\mips-eval.c" />
+    <ClCompile Include="ozmav2\mouse.c" />
+    <ClCompile Include="ozmav2\oz.c" />
+    <ClCompile Include="ozmav2\zactors.c" />
+    <ClCompile Include="ozmav2\zelda.c" />
+    <ClCompile Include="ozmav2\__linux.c" />
+    <ClCompile Include="ozmav2\__win32.c" />
+    <ClCompile Include="sf64toolkit\camera.c" />
+    <ClCompile Include="sf64toolkit\draw.c" />
+    <ClCompile Include="sf64toolkit\f3dex.c" />
+    <ClCompile Include="sf64toolkit\main.c" />
+    <ClCompile Include="sf64toolkit\n64sums.c" />
+    <ClCompile Include="sf64toolkit\oz.c" />
+    <ClCompile Include="sf64toolkit\sf64.c" />
+    <ClCompile Include="sf64toolkit\sf64_viewer.c" />
+    <ClCompile Include="sf64toolkit\__linux.c" />
+    <ClCompile Include="sf64toolkit\__win32.c" />
+    <ClCompile Include="sm64toz64\actors.c" />
+    <ClCompile Include="sm64toz64\collision.c" />
+    <ClCompile Include="sm64toz64\dlist.c" />
+    <ClCompile Include="sm64toz64\main.c" />
+    <ClCompile Include="sm64toz64\script.c" />
+    <ClCompile Include="zsaten\camera.c" />
+    <ClCompile Include="zsaten\hud.c" />
+    <ClCompile Include="zsaten\main.c" />
+    <ClCompile Include="zsaten\memwatch.c" />
+    <ClCompile Include="zsaten\mips-eval.c" />
+    <ClCompile Include="zsaten\oz.c" />
+    <ClCompile Include="zsaten\render.c" />
+    <ClCompile Include="zsaten\shared.c" />
+    <ClCompile Include="zsaten\zactors.c" />
+    <ClCompile Include="zsaten\zelda.c" />
+    <ClCompile Include="zsaten\zold.c" />
+    <ClCompile Include="zsaten\__linux.c" />
+    <ClCompile Include="zsaten\__win32.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="azunyan8\src\audio.h" />
+    <ClInclude Include="azunyan8\src\chip8.h" />
+    <ClInclude Include="azunyan8\src\disasm.h" />
+    <ClInclude Include="azunyan8\src\draw.h" />
+    <ClInclude Include="azunyan8\src\filebrowse.h" />
+    <ClInclude Include="azunyan8\src\globals.h" />
+    <ClInclude Include="azunyan8\src\gui.h" />
+    <ClInclude Include="azunyan8\src\memview.h" />
+    <ClInclude Include="azunyan8\src\program.h" />
+    <ClInclude Include="azunyan8\src\rvl.h" />
+    <ClInclude Include="azunyan8\src\shared.h" />
+    <ClInclude Include="badrdp\badrdp.h" />
+    <ClInclude Include="badrdp\combine.h" />
+    <ClInclude Include="badrdp\crc.h" />
+    <ClInclude Include="badrdp\dlparse.h" />
+    <ClInclude Include="badrdp\dump.h" />
+    <ClInclude Include="badrdp\f3d.h" />
+    <ClInclude Include="badrdp\f3dex.h" />
+    <ClInclude Include="badrdp\f3dex2.h" />
+    <ClInclude Include="badrdp\gbi.h" />
+    <ClInclude Include="badrdp\gdp.h" />
+    <ClInclude Include="badrdp\globals.h" />
+    <ClInclude Include="badrdp\gsp.h" />
+    <ClInclude Include="badrdp\macro.h" />
+    <ClInclude Include="badrdp\macro_def.h" />
+    <ClInclude Include="badrdp\matrix.h" />
+    <ClInclude Include="badrdp\opengl.h" />
+    <ClInclude Include="badrdp\rdp.h" />
+    <ClInclude Include="dlviewer\badrdp.h" />
+    <ClInclude Include="dlviewer\camera.h" />
+    <ClInclude Include="dlviewer\confunc.h" />
+    <ClInclude Include="dlviewer\dlist.h" />
+    <ClInclude Include="dlviewer\draw.h" />
+    <ClInclude Include="dlviewer\font.h" />
+    <ClInclude Include="dlviewer\globals.h" />
+    <ClInclude Include="dlviewer\hud.h" />
+    <ClInclude Include="dlviewer\hud_menu.h" />
+    <ClInclude Include="dlviewer\misaka.h" />
+    <ClInclude Include="dlviewer\mouse.h" />
+    <ClInclude Include="dlviewer\msk_data.h" />
+    <ClInclude Include="dlviewer\oz.h" />
+    <ClInclude Include="dlviewer\__linux.h" />
+    <ClInclude Include="dlviewer\__win32.h" />
+    <ClInclude Include="misaka\misaka.h" />
+    <ClInclude Include="misaka\msk_base.h" />
+    <ClInclude Include="misaka\msk_console.h" />
+    <ClInclude Include="misaka\msk_ui.h" />
+    <ClInclude Include="ozmav2\badrdp.h" />
+    <ClInclude Include="ozmav2\camera.h" />
+    <ClInclude Include="ozmav2\confunc.h" />
+    <ClInclude Include="ozmav2\dialog.h" />
+    <ClInclude Include="ozmav2\draw.h" />
+    <ClInclude Include="ozmav2\font.h" />
+    <ClInclude Include="ozmav2\globals.h" />
+    <ClInclude Include="ozmav2\hud.h" />
+    <ClInclude Include="ozmav2\hud_menu.h" />
+    <ClInclude Include="ozmav2\mips-eval.h" />
+    <ClInclude Include="ozmav2\mips.h" />
+    <ClInclude Include="ozmav2\misaka.h" />
+    <ClInclude Include="ozmav2\mouse.h" />
+    <ClInclude Include="ozmav2\oz.h" />
+    <ClInclude Include="ozmav2\r3400i.h" />
+    <ClInclude Include="ozmav2\zactors.h" />
+    <ClInclude Include="ozmav2\zelda.h" />
+    <ClInclude Include="ozmav2\zelda_cmb.h" />
+    <ClInclude Include="ozmav2\zelda_ver.h" />
+    <ClInclude Include="ozmav2\__linux.h" />
+    <ClInclude Include="ozmav2\__win32.h" />
+    <ClInclude Include="sf64toolkit\camera.h" />
+    <ClInclude Include="sf64toolkit\draw.h" />
+    <ClInclude Include="sf64toolkit\f3dex.h" />
+    <ClInclude Include="sf64toolkit\f3dex_cmd.h" />
+    <ClInclude Include="sf64toolkit\globals.h" />
+    <ClInclude Include="sf64toolkit\main.h" />
+    <ClInclude Include="sf64toolkit\misaka.h" />
+    <ClInclude Include="sf64toolkit\n64sums.h" />
+    <ClInclude Include="sf64toolkit\oz.h" />
+    <ClInclude Include="sf64toolkit\sf64.h" />
+    <ClInclude Include="sf64toolkit\sf64_ver.h" />
+    <ClInclude Include="sf64toolkit\sf64_viewer.h" />
+    <ClInclude Include="sf64toolkit\__linux.h" />
+    <ClInclude Include="sf64toolkit\__win32.h" />
+    <ClInclude Include="sm64toz64\globals.h" />
+    <ClInclude Include="sm64toz64\n64.h" />
+    <ClInclude Include="sm64toz64\sm64.h" />
+    <ClInclude Include="zsaten\badrdp.h" />
+    <ClInclude Include="zsaten\camera.h" />
+    <ClInclude Include="zsaten\dialog.h" />
+    <ClInclude Include="zsaten\font.h" />
+    <ClInclude Include="zsaten\globals.h" />
+    <ClInclude Include="zsaten\hud.h" />
+    <ClInclude Include="zsaten\memwatch.h" />
+    <ClInclude Include="zsaten\mips-eval.h" />
+    <ClInclude Include="zsaten\mips.h" />
+    <ClInclude Include="zsaten\misaka.h" />
+    <ClInclude Include="zsaten\oz.h" />
+    <ClInclude Include="zsaten\r3400i.h" />
+    <ClInclude Include="zsaten\render.h" />
+    <ClInclude Include="zsaten\shared.h" />
+    <ClInclude Include="zsaten\zactors.h" />
+    <ClInclude Include="zsaten\zelda.h" />
+    <ClInclude Include="zsaten\zelda_ver.h" />
+    <ClInclude Include="zsaten\zold.h" />
+    <ClInclude Include="zsaten\__linux.h" />
+    <ClInclude Include="zsaten\__win32.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

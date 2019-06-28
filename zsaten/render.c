@@ -1,5 +1,7 @@
 #include "globals.h"
 
+#define M_PI 3.14159265358979323846
+
 void gl_CreateViewerDLists()
 {
 	vProgram.actorAxisMarkerDL = glGenLists(1);
@@ -257,7 +259,9 @@ void gl_DrawScene(void)
 			"%cBone structure: %s\n"
 			"%cAnimation is %s",
 			vCurrentActor.boneSetupCurrent + 1, vCurrentActor.boneSetupTotal + 1,
-			vCurrentActor.offsetBoneSetup[vCurrentActor.boneSetupCurrent],			vCurrentActor.animCurrent + 1, vCurrentActor.animTotal + 1,			vCurrentActor.offsetAnims[vCurrentActor.animCurrent],
+			vCurrentActor.offsetBoneSetup[vCurrentActor.boneSetupCurrent],
+			vCurrentActor.animCurrent + 1, vCurrentActor.animTotal + 1,
+			vCurrentActor.offsetAnims[vCurrentActor.animCurrent],
 			vCurrentActor.frameCurrent + 1, vCurrentActor.frameTotal + 1,
 			vProgram.targetFPS,
 			(vProgram.showBones ? '\x90' : '\x91'), (vProgram.showBones ? "shown" : "hidden"),

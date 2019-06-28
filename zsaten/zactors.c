@@ -1,5 +1,7 @@
 #include "globals.h"
 
+#define MAXBONES 100
+
 void old_limb_free_tree(void *l);
 
 void swapRAMSegments(unsigned char Seg1, unsigned char Seg2)
@@ -450,7 +452,7 @@ void drawLink(unsigned int BoneOffset, unsigned int AnimationOffset, float Scale
 		return;
 	}
 
-	actorBone Bones[BoneCount];
+	actorBone Bones[MAXBONES];
 	memset(Bones, 0, sizeof(actorBone) * BoneCount);
 
 
@@ -540,7 +542,7 @@ void drawBones(unsigned int BoneOffset, unsigned int AnimationOffset, float Scal
 		return;
 	}
 
-	actorBone Bones[BoneCount];
+	actorBone Bones[MAXBONES];
 	memset(Bones, 0, sizeof(actorBone) * BoneCount);
 
 	// SWAP segments

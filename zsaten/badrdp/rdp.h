@@ -1,0 +1,30 @@
+#include "f3dex2.h"
+
+extern void RDP_UnemulatedCmd();
+extern void RDP_G_TEXRECT();
+extern void RDP_G_TEXRECTFLIP();
+extern void RDP_G_RDPLOADSYNC();
+extern void RDP_G_RDPPIPESYNC();
+extern void RDP_G_RDPTILESYNC();
+extern void RDP_G_RDPFULLSYNC();
+extern void RDP_G_SETKEYGB();
+extern void RDP_G_SETKEYR();
+extern void RDP_G_SETCONVERT();
+extern void RDP_G_SETSCISSOR();
+extern void RDP_G_SETPRIMDEPTH();
+extern void RDP_G_RDPSETOTHERMODE();
+extern void RDP_G_LOADTLUT();
+extern void RDP_G_SETTILESIZE();
+extern void RDP_G_LOADBLOCK();
+extern void RDP_G_LOADTILE();
+extern void RDP_G_SETTILE();
+extern void RDP_G_FILLRECT();
+extern void RDP_G_SETFILLCOLOR();
+extern void RDP_G_SETFOGCOLOR();
+extern void RDP_G_SETBLENDCOLOR();
+extern void RDP_G_SETPRIMCOLOR();
+extern void RDP_G_SETENVCOLOR();
+extern void RDP_G_SETCOMBINE();
+extern void RDP_G_SETTIMG();
+extern void RDP_G_SETZIMG();
+extern void RDP_G_SETCIMG();
