@@ -45,94 +45,94 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 #############################################
 # Order-only phony target for zsaten
 
-build cmake_object_order_depends_target_zsaten: phony || CMakeFiles\zsaten.dir
+build cmake_object_order_depends_target_zsaten: phony || cmake_object_order_depends_target_badrdp cmake_object_order_depends_target_misaka
 build CMakeFiles\zsaten.dir\__linux.c.obj: C_COMPILER__zsaten ..\..\..\__linux.c || cmake_object_order_depends_target_zsaten
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka -I"C:\Program Files\vcpkg-master\installed\x64-windows\include"
   OBJECT_DIR = CMakeFiles\zsaten.dir
   OBJECT_FILE_DIR = CMakeFiles\zsaten.dir
   TARGET_COMPILE_PDB = CMakeFiles\zsaten.dir\
   TARGET_PDB = zsaten.pdb
 build CMakeFiles\zsaten.dir\__win32.c.obj: C_COMPILER__zsaten ..\..\..\__win32.c || cmake_object_order_depends_target_zsaten
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka -I"C:\Program Files\vcpkg-master\installed\x64-windows\include"
   OBJECT_DIR = CMakeFiles\zsaten.dir
   OBJECT_FILE_DIR = CMakeFiles\zsaten.dir
   TARGET_COMPILE_PDB = CMakeFiles\zsaten.dir\
   TARGET_PDB = zsaten.pdb
 build CMakeFiles\zsaten.dir\camera.c.obj: C_COMPILER__zsaten ..\..\..\camera.c || cmake_object_order_depends_target_zsaten
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka -I"C:\Program Files\vcpkg-master\installed\x64-windows\include"
   OBJECT_DIR = CMakeFiles\zsaten.dir
   OBJECT_FILE_DIR = CMakeFiles\zsaten.dir
   TARGET_COMPILE_PDB = CMakeFiles\zsaten.dir\
   TARGET_PDB = zsaten.pdb
 build CMakeFiles\zsaten.dir\hud.c.obj: C_COMPILER__zsaten ..\..\..\hud.c || cmake_object_order_depends_target_zsaten
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka -I"C:\Program Files\vcpkg-master\installed\x64-windows\include"
   OBJECT_DIR = CMakeFiles\zsaten.dir
   OBJECT_FILE_DIR = CMakeFiles\zsaten.dir
   TARGET_COMPILE_PDB = CMakeFiles\zsaten.dir\
   TARGET_PDB = zsaten.pdb
 build CMakeFiles\zsaten.dir\main.c.obj: C_COMPILER__zsaten ..\..\..\main.c || cmake_object_order_depends_target_zsaten
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka -I"C:\Program Files\vcpkg-master\installed\x64-windows\include"
   OBJECT_DIR = CMakeFiles\zsaten.dir
   OBJECT_FILE_DIR = CMakeFiles\zsaten.dir
   TARGET_COMPILE_PDB = CMakeFiles\zsaten.dir\
   TARGET_PDB = zsaten.pdb
 build CMakeFiles\zsaten.dir\memwatch.c.obj: C_COMPILER__zsaten ..\..\..\memwatch.c || cmake_object_order_depends_target_zsaten
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka -I"C:\Program Files\vcpkg-master\installed\x64-windows\include"
   OBJECT_DIR = CMakeFiles\zsaten.dir
   OBJECT_FILE_DIR = CMakeFiles\zsaten.dir
   TARGET_COMPILE_PDB = CMakeFiles\zsaten.dir\
   TARGET_PDB = zsaten.pdb
 build CMakeFiles\zsaten.dir\mips-eval.c.obj: C_COMPILER__zsaten ..\..\..\mips-eval.c || cmake_object_order_depends_target_zsaten
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka -I"C:\Program Files\vcpkg-master\installed\x64-windows\include"
   OBJECT_DIR = CMakeFiles\zsaten.dir
   OBJECT_FILE_DIR = CMakeFiles\zsaten.dir
   TARGET_COMPILE_PDB = CMakeFiles\zsaten.dir\
   TARGET_PDB = zsaten.pdb
 build CMakeFiles\zsaten.dir\oz.c.obj: C_COMPILER__zsaten ..\..\..\oz.c || cmake_object_order_depends_target_zsaten
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka -I"C:\Program Files\vcpkg-master\installed\x64-windows\include"
   OBJECT_DIR = CMakeFiles\zsaten.dir
   OBJECT_FILE_DIR = CMakeFiles\zsaten.dir
   TARGET_COMPILE_PDB = CMakeFiles\zsaten.dir\
   TARGET_PDB = zsaten.pdb
 build CMakeFiles\zsaten.dir\render.c.obj: C_COMPILER__zsaten ..\..\..\render.c || cmake_object_order_depends_target_zsaten
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka -I"C:\Program Files\vcpkg-master\installed\x64-windows\include"
   OBJECT_DIR = CMakeFiles\zsaten.dir
   OBJECT_FILE_DIR = CMakeFiles\zsaten.dir
   TARGET_COMPILE_PDB = CMakeFiles\zsaten.dir\
   TARGET_PDB = zsaten.pdb
 build CMakeFiles\zsaten.dir\shared.c.obj: C_COMPILER__zsaten ..\..\..\shared.c || cmake_object_order_depends_target_zsaten
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka -I"C:\Program Files\vcpkg-master\installed\x64-windows\include"
   OBJECT_DIR = CMakeFiles\zsaten.dir
   OBJECT_FILE_DIR = CMakeFiles\zsaten.dir
   TARGET_COMPILE_PDB = CMakeFiles\zsaten.dir\
   TARGET_PDB = zsaten.pdb
 build CMakeFiles\zsaten.dir\zactors.c.obj: C_COMPILER__zsaten ..\..\..\zactors.c || cmake_object_order_depends_target_zsaten
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka -I"C:\Program Files\vcpkg-master\installed\x64-windows\include"
   OBJECT_DIR = CMakeFiles\zsaten.dir
   OBJECT_FILE_DIR = CMakeFiles\zsaten.dir
   TARGET_COMPILE_PDB = CMakeFiles\zsaten.dir\
   TARGET_PDB = zsaten.pdb
 build CMakeFiles\zsaten.dir\zelda.c.obj: C_COMPILER__zsaten ..\..\..\zelda.c || cmake_object_order_depends_target_zsaten
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka -I"C:\Program Files\vcpkg-master\installed\x64-windows\include"
   OBJECT_DIR = CMakeFiles\zsaten.dir
   OBJECT_FILE_DIR = CMakeFiles\zsaten.dir
   TARGET_COMPILE_PDB = CMakeFiles\zsaten.dir\
   TARGET_PDB = zsaten.pdb
 build CMakeFiles\zsaten.dir\zold.c.obj: C_COMPILER__zsaten ..\..\..\zold.c || cmake_object_order_depends_target_zsaten
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka -I"C:\Program Files\vcpkg-master\installed\x64-windows\include"
   OBJECT_DIR = CMakeFiles\zsaten.dir
   OBJECT_FILE_DIR = CMakeFiles\zsaten.dir
   TARGET_COMPILE_PDB = CMakeFiles\zsaten.dir\
@@ -145,12 +145,12 @@ build CMakeFiles\zsaten.dir\zold.c.obj: C_COMPILER__zsaten ..\..\..\zold.c || cm
 #############################################
 # Link the executable zsaten.exe
 
-build zsaten.exe: C_EXECUTABLE_LINKER__zsaten CMakeFiles\zsaten.dir\__linux.c.obj CMakeFiles\zsaten.dir\__win32.c.obj CMakeFiles\zsaten.dir\camera.c.obj CMakeFiles\zsaten.dir\hud.c.obj CMakeFiles\zsaten.dir\main.c.obj CMakeFiles\zsaten.dir\memwatch.c.obj CMakeFiles\zsaten.dir\mips-eval.c.obj CMakeFiles\zsaten.dir\oz.c.obj CMakeFiles\zsaten.dir\render.c.obj CMakeFiles\zsaten.dir\shared.c.obj CMakeFiles\zsaten.dir\zactors.c.obj CMakeFiles\zsaten.dir\zelda.c.obj CMakeFiles\zsaten.dir\zold.c.obj
+build zsaten.exe: C_EXECUTABLE_LINKER__zsaten CMakeFiles\zsaten.dir\__linux.c.obj CMakeFiles\zsaten.dir\__win32.c.obj CMakeFiles\zsaten.dir\camera.c.obj CMakeFiles\zsaten.dir\hud.c.obj CMakeFiles\zsaten.dir\main.c.obj CMakeFiles\zsaten.dir\memwatch.c.obj CMakeFiles\zsaten.dir\mips-eval.c.obj CMakeFiles\zsaten.dir\oz.c.obj CMakeFiles\zsaten.dir\render.c.obj CMakeFiles\zsaten.dir\shared.c.obj CMakeFiles\zsaten.dir\zactors.c.obj CMakeFiles\zsaten.dir\zelda.c.obj CMakeFiles\zsaten.dir\zold.c.obj | badrdp\badrdp.lib misaka\misaka.lib C$:\Program$ Files\vcpkg-master\installed\x64-windows\debug\lib\glew32d.lib || badrdp\badrdp.lib misaka\misaka.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = badrdp.lib misaka.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = badrdp\badrdp.lib misaka\misaka.lib "C:\Program Files\vcpkg-master\installed\x64-windows\debug\lib\glew32d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\zsaten.dir
-  POST_BUILD = cd .
+  POST_BUILD = cmd.exe /C "cd /D C:\Users\Andrew\source\repos\ozmav\zsaten\out\build\x64-Debug && powershell -noprofile -executionpolicy Bypass -file "C:/Program Files/vcpkg-master/scripts/buildsystems/msbuild/applocal.ps1" -targetBinary C:/Users/Andrew/source/repos/ozmav/zsaten/out/build/x64-Debug/zsaten.exe -installedDir "C:/Program Files/vcpkg-master/installed/x64-windows/debug/bin" -OutVariable out"
   PRE_LINK = cd .
   TARGET_COMPILE_PDB = CMakeFiles\zsaten.dir\
   TARGET_FILE = zsaten.exe
@@ -167,13 +167,239 @@ build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Andrew/source/repos/ozmav/zsaten/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target badrdp
+
+
+#############################################
+# Order-only phony target for badrdp
+
+build cmake_object_order_depends_target_badrdp: phony || badrdp\CMakeFiles\badrdp.dir
+build badrdp\CMakeFiles\badrdp.dir\combine.c.obj: C_COMPILER__badrdp ..\..\..\badrdp\combine.c || cmake_object_order_depends_target_badrdp
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = badrdp\CMakeFiles\badrdp.dir
+  OBJECT_FILE_DIR = badrdp\CMakeFiles\badrdp.dir
+  TARGET_COMPILE_PDB = badrdp\CMakeFiles\badrdp.dir\badrdp.pdb
+  TARGET_PDB = badrdp\badrdp.pdb
+build badrdp\CMakeFiles\badrdp.dir\crc.c.obj: C_COMPILER__badrdp ..\..\..\badrdp\crc.c || cmake_object_order_depends_target_badrdp
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = badrdp\CMakeFiles\badrdp.dir
+  OBJECT_FILE_DIR = badrdp\CMakeFiles\badrdp.dir
+  TARGET_COMPILE_PDB = badrdp\CMakeFiles\badrdp.dir\badrdp.pdb
+  TARGET_PDB = badrdp\badrdp.pdb
+build badrdp\CMakeFiles\badrdp.dir\dlparse.c.obj: C_COMPILER__badrdp ..\..\..\badrdp\dlparse.c || cmake_object_order_depends_target_badrdp
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = badrdp\CMakeFiles\badrdp.dir
+  OBJECT_FILE_DIR = badrdp\CMakeFiles\badrdp.dir
+  TARGET_COMPILE_PDB = badrdp\CMakeFiles\badrdp.dir\badrdp.pdb
+  TARGET_PDB = badrdp\badrdp.pdb
+build badrdp\CMakeFiles\badrdp.dir\dump.c.obj: C_COMPILER__badrdp ..\..\..\badrdp\dump.c || cmake_object_order_depends_target_badrdp
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = badrdp\CMakeFiles\badrdp.dir
+  OBJECT_FILE_DIR = badrdp\CMakeFiles\badrdp.dir
+  TARGET_COMPILE_PDB = badrdp\CMakeFiles\badrdp.dir\badrdp.pdb
+  TARGET_PDB = badrdp\badrdp.pdb
+build badrdp\CMakeFiles\badrdp.dir\f3d.c.obj: C_COMPILER__badrdp ..\..\..\badrdp\f3d.c || cmake_object_order_depends_target_badrdp
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = badrdp\CMakeFiles\badrdp.dir
+  OBJECT_FILE_DIR = badrdp\CMakeFiles\badrdp.dir
+  TARGET_COMPILE_PDB = badrdp\CMakeFiles\badrdp.dir\badrdp.pdb
+  TARGET_PDB = badrdp\badrdp.pdb
+build badrdp\CMakeFiles\badrdp.dir\f3dex.c.obj: C_COMPILER__badrdp ..\..\..\badrdp\f3dex.c || cmake_object_order_depends_target_badrdp
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = badrdp\CMakeFiles\badrdp.dir
+  OBJECT_FILE_DIR = badrdp\CMakeFiles\badrdp.dir
+  TARGET_COMPILE_PDB = badrdp\CMakeFiles\badrdp.dir\badrdp.pdb
+  TARGET_PDB = badrdp\badrdp.pdb
+build badrdp\CMakeFiles\badrdp.dir\f3dex2.c.obj: C_COMPILER__badrdp ..\..\..\badrdp\f3dex2.c || cmake_object_order_depends_target_badrdp
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = badrdp\CMakeFiles\badrdp.dir
+  OBJECT_FILE_DIR = badrdp\CMakeFiles\badrdp.dir
+  TARGET_COMPILE_PDB = badrdp\CMakeFiles\badrdp.dir\badrdp.pdb
+  TARGET_PDB = badrdp\badrdp.pdb
+build badrdp\CMakeFiles\badrdp.dir\gdp.c.obj: C_COMPILER__badrdp ..\..\..\badrdp\gdp.c || cmake_object_order_depends_target_badrdp
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = badrdp\CMakeFiles\badrdp.dir
+  OBJECT_FILE_DIR = badrdp\CMakeFiles\badrdp.dir
+  TARGET_COMPILE_PDB = badrdp\CMakeFiles\badrdp.dir\badrdp.pdb
+  TARGET_PDB = badrdp\badrdp.pdb
+build badrdp\CMakeFiles\badrdp.dir\gsp.c.obj: C_COMPILER__badrdp ..\..\..\badrdp\gsp.c || cmake_object_order_depends_target_badrdp
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = badrdp\CMakeFiles\badrdp.dir
+  OBJECT_FILE_DIR = badrdp\CMakeFiles\badrdp.dir
+  TARGET_COMPILE_PDB = badrdp\CMakeFiles\badrdp.dir\badrdp.pdb
+  TARGET_PDB = badrdp\badrdp.pdb
+build badrdp\CMakeFiles\badrdp.dir\macro.c.obj: C_COMPILER__badrdp ..\..\..\badrdp\macro.c || cmake_object_order_depends_target_badrdp
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = badrdp\CMakeFiles\badrdp.dir
+  OBJECT_FILE_DIR = badrdp\CMakeFiles\badrdp.dir
+  TARGET_COMPILE_PDB = badrdp\CMakeFiles\badrdp.dir\badrdp.pdb
+  TARGET_PDB = badrdp\badrdp.pdb
+build badrdp\CMakeFiles\badrdp.dir\matrix.c.obj: C_COMPILER__badrdp ..\..\..\badrdp\matrix.c || cmake_object_order_depends_target_badrdp
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = badrdp\CMakeFiles\badrdp.dir
+  OBJECT_FILE_DIR = badrdp\CMakeFiles\badrdp.dir
+  TARGET_COMPILE_PDB = badrdp\CMakeFiles\badrdp.dir\badrdp.pdb
+  TARGET_PDB = badrdp\badrdp.pdb
+build badrdp\CMakeFiles\badrdp.dir\opengl.c.obj: C_COMPILER__badrdp ..\..\..\badrdp\opengl.c || cmake_object_order_depends_target_badrdp
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = badrdp\CMakeFiles\badrdp.dir
+  OBJECT_FILE_DIR = badrdp\CMakeFiles\badrdp.dir
+  TARGET_COMPILE_PDB = badrdp\CMakeFiles\badrdp.dir\badrdp.pdb
+  TARGET_PDB = badrdp\badrdp.pdb
+build badrdp\CMakeFiles\badrdp.dir\rdp.c.obj: C_COMPILER__badrdp ..\..\..\badrdp\rdp.c || cmake_object_order_depends_target_badrdp
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = badrdp\CMakeFiles\badrdp.dir
+  OBJECT_FILE_DIR = badrdp\CMakeFiles\badrdp.dir
+  TARGET_COMPILE_PDB = badrdp\CMakeFiles\badrdp.dir\badrdp.pdb
+  TARGET_PDB = badrdp\badrdp.pdb
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target badrdp
+
+
+#############################################
+# Link the static library badrdp\badrdp.lib
+
+build badrdp\badrdp.lib: C_STATIC_LIBRARY_LINKER__badrdp badrdp\CMakeFiles\badrdp.dir\combine.c.obj badrdp\CMakeFiles\badrdp.dir\crc.c.obj badrdp\CMakeFiles\badrdp.dir\dlparse.c.obj badrdp\CMakeFiles\badrdp.dir\dump.c.obj badrdp\CMakeFiles\badrdp.dir\f3d.c.obj badrdp\CMakeFiles\badrdp.dir\f3dex.c.obj badrdp\CMakeFiles\badrdp.dir\f3dex2.c.obj badrdp\CMakeFiles\badrdp.dir\gdp.c.obj badrdp\CMakeFiles\badrdp.dir\gsp.c.obj badrdp\CMakeFiles\badrdp.dir\macro.c.obj badrdp\CMakeFiles\badrdp.dir\matrix.c.obj badrdp\CMakeFiles\badrdp.dir\opengl.c.obj badrdp\CMakeFiles\badrdp.dir\rdp.c.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = badrdp\CMakeFiles\badrdp.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = badrdp\CMakeFiles\badrdp.dir\badrdp.pdb
+  TARGET_FILE = badrdp\badrdp.lib
+  TARGET_PDB = badrdp\badrdp.pdb
+
+#############################################
+# Utility command for edit_cache
+
+build badrdp\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Andrew\source\repos\ozmav\zsaten\out\build\x64-Debug\badrdp && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+build badrdp\edit_cache: phony badrdp\CMakeFiles\edit_cache.util
+
+#############################################
+# Utility command for rebuild_cache
+
+build badrdp\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Andrew\source\repos\ozmav\zsaten\out\build\x64-Debug\badrdp && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:\Users\Andrew\source\repos\ozmav\zsaten -BC:\Users\Andrew\source\repos\ozmav\zsaten\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+build badrdp\rebuild_cache: phony badrdp\CMakeFiles\rebuild_cache.util
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Andrew/source/repos/ozmav/zsaten/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target misaka
+
+
+#############################################
+# Order-only phony target for misaka
+
+build cmake_object_order_depends_target_misaka: phony || misaka\CMakeFiles\misaka.dir
+build misaka\CMakeFiles\misaka.dir\msk_base.c.obj: C_COMPILER__misaka ..\..\..\misaka\msk_base.c || cmake_object_order_depends_target_misaka
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = misaka\CMakeFiles\misaka.dir
+  OBJECT_FILE_DIR = misaka\CMakeFiles\misaka.dir
+  TARGET_COMPILE_PDB = misaka\CMakeFiles\misaka.dir\misaka.pdb
+  TARGET_PDB = misaka\misaka.pdb
+build misaka\CMakeFiles\misaka.dir\msk_console.c.obj: C_COMPILER__misaka ..\..\..\misaka\msk_console.c || cmake_object_order_depends_target_misaka
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = misaka\CMakeFiles\misaka.dir
+  OBJECT_FILE_DIR = misaka\CMakeFiles\misaka.dir
+  TARGET_COMPILE_PDB = misaka\CMakeFiles\misaka.dir\misaka.pdb
+  TARGET_PDB = misaka\misaka.pdb
+build misaka\CMakeFiles\misaka.dir\msk_ui.c.obj: C_COMPILER__misaka ..\..\..\misaka\msk_ui.c || cmake_object_order_depends_target_misaka
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\badrdp -I..\..\..\misaka
+  OBJECT_DIR = misaka\CMakeFiles\misaka.dir
+  OBJECT_FILE_DIR = misaka\CMakeFiles\misaka.dir
+  TARGET_COMPILE_PDB = misaka\CMakeFiles\misaka.dir\misaka.pdb
+  TARGET_PDB = misaka\misaka.pdb
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target misaka
+
+
+#############################################
+# Link the static library misaka\misaka.lib
+
+build misaka\misaka.lib: C_STATIC_LIBRARY_LINKER__misaka misaka\CMakeFiles\misaka.dir\msk_base.c.obj misaka\CMakeFiles\misaka.dir\msk_console.c.obj misaka\CMakeFiles\misaka.dir\msk_ui.c.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = misaka\CMakeFiles\misaka.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = misaka\CMakeFiles\misaka.dir\misaka.pdb
+  TARGET_FILE = misaka\misaka.lib
+  TARGET_PDB = misaka\misaka.pdb
+
+#############################################
+# Utility command for edit_cache
+
+build misaka\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Andrew\source\repos\ozmav\zsaten\out\build\x64-Debug\misaka && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+build misaka\edit_cache: phony misaka\CMakeFiles\edit_cache.util
+
+#############################################
+# Utility command for rebuild_cache
+
+build misaka\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Andrew\source\repos\ozmav\zsaten\out\build\x64-Debug\misaka && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:\Users\Andrew\source\repos\ozmav\zsaten -BC:\Users\Andrew\source\repos\ozmav\zsaten\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+build misaka\rebuild_cache: phony misaka\CMakeFiles\rebuild_cache.util
+# =============================================================================
 # Target aliases.
 
+build badrdp: phony badrdp\badrdp.lib
+build badrdp.lib: phony badrdp\badrdp.lib
+build misaka: phony misaka\misaka.lib
+build misaka.lib: phony misaka\misaka.lib
 build zsaten: phony zsaten.exe
 # =============================================================================
 # Folder targets.
 
 # =============================================================================
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Andrew/source/repos/ozmav/zsaten/out/build/x64-Debug/badrdp
+
+build  badrdp\all: phony badrdp
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Andrew/source/repos/ozmav/zsaten/out/build/x64-Debug/misaka
+
+build  misaka\all: phony misaka
 # =============================================================================
 # Unknown Build Time Dependencies.
 # Tell Ninja that they may appear as side effects of build rules
@@ -186,7 +412,7 @@ build zsaten: phony zsaten.exe
 #############################################
 # The main all target.
 
-build all: phony zsaten.exe
+build all: phony zsaten.exe badrdp\badrdp.lib misaka\misaka.lib
 
 #############################################
 # Make the all target the default.
@@ -196,13 +422,13 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.14.19050301-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.14.19050301-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.14.19050301-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.14.19050301-MSVC_2\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\badrdp\CMakeLists.txt ..\..\..\misaka\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\FindGLEW.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\FindPNG.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\FindZLIB.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake C$:\Program$ Files\vcpkg-master\scripts\buildsystems\vcpkg.cmake CMakeCache.txt CMakeFiles\3.14.19050301-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.14.19050301-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.14.19050301-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.14.19050301-MSVC_2\CMakeSystem.cmake CMakeFiles\feature_tests.c CMakeFiles\feature_tests.cxx
   pool = console
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\..\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.14.19050301-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.14.19050301-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.14.19050301-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.14.19050301-MSVC_2\CMakeSystem.cmake: phony
+build ..\..\..\CMakeLists.txt ..\..\..\badrdp\CMakeLists.txt ..\..\..\misaka\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\FindGLEW.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\FindPNG.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\FindZLIB.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake C$:\Program$ Files\vcpkg-master\scripts\buildsystems\vcpkg.cmake CMakeCache.txt CMakeFiles\3.14.19050301-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.14.19050301-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.14.19050301-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.14.19050301-MSVC_2\CMakeSystem.cmake CMakeFiles\feature_tests.c CMakeFiles\feature_tests.cxx: phony
 
 #############################################
 # Clean all the built files.

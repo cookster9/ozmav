@@ -11,6 +11,9 @@ vZeldaInfoStruct vZeldaInfo;
 vActorStruct vActors[768];
 vObjectStruct vObjects[768];
 
+//my editing bone array for link animations
+tempActorBone TempBones[100][100];
+
 vRGBAStruct vBoneColorFactor;
 
 #include "dialog.h"
@@ -236,6 +239,8 @@ int main(int argc, char **argv)
 	vProgram.enableHUD = true;
 
 	vCurrentActor.actorNumber = 0;
+	vCurrentActor.boneCurrent = 0;
+	vCurrentActor.axisCurrent = 1; //X axis, I'm sure there's a clearer way to do this but whatev
 
 	vCurrentActor.linkUseDetailModel = true;
 	vCurrentActor.linkAgeSwitch = false;
@@ -250,6 +255,11 @@ int main(int argc, char **argv)
 	ca_Reset();
 
 	vProgram.isRunning = true;
+
+	vProgram.animLoad = true;
+
+	vProgram.editMode = false;
+
 
 	while(vProgram.isRunning) {
 		// let the API do whatever it needs to
@@ -276,7 +286,7 @@ int main(int argc, char **argv)
 				float startTime = clock() * 0.001f;
 
 				gl_DrawScene();
-
+				vProgram.animLoad = false;
 				if(((float)startTime - lastTime) > 1.0f / vProgram.targetFPS) {
 					lastTime = startTime;
 					if(vProgram.animPlay) {
@@ -343,44 +353,56 @@ void doKbdInput()
 		vProgram.key[KEY_SWITCH_PLAYANIM] = false;
 	}
 
-	if(vProgram.key[KEY_SWITCH_PREVACTOR]) {
-		if(vCurrentActor.actorNumber > 0) {
-			vCurrentActor.actorNumber--;
-			vCurrentActor.animCurrent = 0;
-			vCurrentActor.frameCurrent = 0;
-			initActorParsing(-1);
+	if (vProgram.key[KEY_SWITCH_PREVACTOR]) {
+		if (vProgram.editMode == false) {
+			if (vCurrentActor.actorNumber > 0) {
+				vCurrentActor.actorNumber--;
+				vCurrentActor.animCurrent = 0;
+				vCurrentActor.frameCurrent = 0;
+				initActorParsing(-1);
+			}
 		}
 		vProgram.key[KEY_SWITCH_PREVACTOR] = false;
 	}
 
 	if(vProgram.key[KEY_SWITCH_NEXTACTOR]) {
-		if(vCurrentActor.actorNumber < vZeldaInfo.actorCount - 1) {
-			vCurrentActor.actorNumber++;
-			vCurrentActor.animCurrent = 0;
-			vCurrentActor.frameCurrent = 0;
-			initActorParsing(-1);
+		if (vProgram.editMode == false) {
+			if (vCurrentActor.actorNumber < vZeldaInfo.actorCount - 1) {
+				vCurrentActor.actorNumber++;
+				vCurrentActor.animCurrent = 0;
+				vCurrentActor.frameCurrent = 0;
+				initActorParsing(-1);
+			}
 		}
 		vProgram.key[KEY_SWITCH_NEXTACTOR] = false;
 	}
 
 	if(vProgram.key[KEY_SWITCH_PREVANIM]) {
-		if(vCurrentActor.animCurrent > 0) {
-			vCurrentActor.animCurrent--;
-		} else {
-			vCurrentActor.animCurrent = vCurrentActor.animTotal;
+		if (vProgram.editMode == false) {
+			if (vCurrentActor.animCurrent > 0) {
+				vCurrentActor.animCurrent--;
+			}
+			else {
+				vCurrentActor.animCurrent = vCurrentActor.animTotal;
+			}
+			vCurrentActor.frameCurrent = 0;
+			vProgram.key[KEY_SWITCH_PREVANIM] = false;
+			vProgram.animLoad = true;
 		}
-		vCurrentActor.frameCurrent = 0;
-		vProgram.key[KEY_SWITCH_PREVANIM] = false;
 	}
 
 	if(vProgram.key[KEY_SWITCH_NEXTANIM]) {
-		if(vCurrentActor.animCurrent < vCurrentActor.animTotal) {
-			vCurrentActor.animCurrent++;
-		} else {
-			vCurrentActor.animCurrent = 0;
+		if (vProgram.editMode == false) {
+			if (vCurrentActor.animCurrent < vCurrentActor.animTotal) {
+				vCurrentActor.animCurrent++;
+			}
+			else {
+				vCurrentActor.animCurrent = 0;
+			}
+			vCurrentActor.frameCurrent = 0;
+			vProgram.key[KEY_SWITCH_NEXTANIM] = false;
+			vProgram.animLoad = true;
 		}
-		vCurrentActor.frameCurrent = 0;
-		vProgram.key[KEY_SWITCH_NEXTANIM] = false;
 	}
 
 	if(vProgram.key[KEY_SWITCH_PREVBONES]) {
@@ -444,6 +466,83 @@ void doKbdInput()
 		if(vCurrentActor.frameCurrent > 0) vCurrentActor.frameCurrent--;
 		else vCurrentActor.frameCurrent = vCurrentActor.frameTotal;
 		vProgram.key[KEY_SWITCH_PREVFRAME] = false;
+	}
+
+	if (vProgram.key[KEY_SWITCH_EDIT]) {
+		//only link for now
+		if (vCurrentActor.actorNumber == 0) {
+			//going from off to on
+			if (vProgram.editMode == false) {
+				dbgprintf(0, 0, "Edit mode on");				
+				vProgram.editMode = true;
+				//add current animation to new array/vector to be able to edit. point everything to that instead
+				//enable edit tools
+				readFileData();
+			}
+			//going from on to off
+			else { 
+				vProgram.editMode = false;
+				//output animation data to file
+				outputFile();
+				dbgprintf(0, 0, "Edit mode off");
+			}
+		}
+		vProgram.key[KEY_SWITCH_EDIT] = false;
+	}
+
+	if (vProgram.editMode) {
+		/*
+		#define KEY_SWITCH_NEXTBONE			'B'
+		#define KEY_SWITCH_PREVBONE			'V'
+		#define KEY_SWITCH_BONEX			'X'
+		#define KEY_SWITCH_BONEY			'Y'
+		#define KEY_SWITCH_BONEZ			'Z'
+		#define KEY_ACTOR_BONE_PLUS			SB_PAGEUP
+		#define KEY_ACTOR_BONE_MINUS		SB_PAGEDOWN
+		*/
+		if (vProgram.key[KEY_SWITCH_NEXTBONE]) {
+			vCurrentActor.boneCurrent++;
+			vProgram.key[KEY_SWITCH_NEXTBONE] = false;
+		}
+		if (vProgram.key[KEY_SWITCH_PREVBONE]) {
+			vCurrentActor.boneCurrent--;
+			vProgram.key[KEY_SWITCH_PREVBONE] = false;
+		}
+		if (vProgram.key[KEY_SWITCH_BONEX]) {
+			vCurrentActor.axisCurrent = 1;
+			vProgram.key[KEY_SWITCH_BONEX] = false;
+		}
+		if (vProgram.key[KEY_SWITCH_BONEY]) {
+			vCurrentActor.axisCurrent = 2;
+			vProgram.key[KEY_SWITCH_BONEY] = false;
+		}
+		if (vProgram.key[KEY_SWITCH_BONEZ]) {
+			vCurrentActor.axisCurrent = 3;
+			vProgram.key[KEY_SWITCH_BONEZ] = false;
+		}
+		if (vProgram.key[KEY_ACTOR_BONE_PLUS]) {
+			switch (vCurrentActor.axisCurrent) {
+			case 1:
+				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RX += 256;
+			case 2:
+				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RY += 256;
+			case 3:
+				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RZ += 256;
+			}
+			vProgram.key[KEY_ACTOR_BONE_PLUS] = false;
+		}
+		if (vProgram.key[KEY_ACTOR_BONE_MINUS]) {
+			switch (vCurrentActor.axisCurrent) {
+			case 1:
+				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RX -= 256;
+			case 2:
+				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RY -= 256;
+			case 3:
+				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RZ -= 256;
+			}
+			vProgram.key[KEY_ACTOR_BONE_MINUS] = false;
+		}
+
 	}
 }
 

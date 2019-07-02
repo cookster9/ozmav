@@ -1,0 +1,110 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "badrdp",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "badrdp",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "misaka",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "misaka",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "zSatenWindows",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "badrdp::@9e58ceb8d9f98c56129a",
+					"jsonFile" : "target-badrdp-Debug-ab2c07f38bb2a59ebede.json",
+					"name" : "badrdp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "misaka::@74f816e65cf4934e94d2",
+					"jsonFile" : "target-misaka-Debug-d449dea204b3a9f1238e.json",
+					"name" : "misaka",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zsaten::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zsaten-Debug-77f3beb47857d5543448.json",
+					"name" : "zsaten",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Andrew/source/repos/ozmav/zsaten/out/build/x64-Debug",
+		"source" : "C:/Users/Andrew/source/repos/ozmav/zsaten"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

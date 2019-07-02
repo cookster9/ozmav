@@ -237,7 +237,7 @@ void processActor()
 		mips_SetSpecialOp(MIPS_LH(mips_r0, 0x1C, mips_s0), MIPS_LH(mips_r0, 0x1C, mips_a0), vCurrentActor.variable);
 
 		Sections = getActorSections(vActors[vCurrentActor.actorNumber].ActorData, vActors[vCurrentActor.actorNumber].ActorSize, 0);
-
+		
 		mips_ResetMap();
 
 		if(Sections.data_s) mips_SetMap(Sections.data, Sections.data_s, Sections.data_va);
@@ -455,18 +455,37 @@ void drawLink(unsigned int BoneOffset, unsigned int AnimationOffset, float Scale
 	actorBone Bones[MAXBONES];
 	memset(Bones, 0, sizeof(actorBone) * BoneCount);
 
-
-	if(RDP_CheckAddressValidity(AnimationOffset))
+	if (RDP_CheckAddressValidity(AnimationOffset))
 	{
-		AniSeg = AnimationOffset>>24;
-		rot_offset = AnimationOffset&0xFFFFFF;
+		AniSeg = AnimationOffset >> 24;
+		rot_offset = AnimationOffset & 0xFFFFFF;
 		rot_offset += (vCurrentActor.frameCurrent * (BoneCount * 6 + 8));
-		Bones[0].X = Read16(RAM[AniSeg].Data, rot_offset);
-		rot_offset+=2;
-		Bones[0].Y = Read16(RAM[AniSeg].Data, rot_offset);
-		rot_offset+=2;
-		Bones[0].Z = Read16(RAM[AniSeg].Data, rot_offset);
-		rot_offset+=2;
+		if (vProgram.editMode) {
+			Bones[0].X = TempBones[vCurrentActor.frameCurrent][0].X;
+		}
+		else Bones[0].X = Read16(RAM[AniSeg].Data, rot_offset);
+		rot_offset += 2;
+		
+		if (vProgram.editMode) {
+			Bones[0].Y = TempBones[vCurrentActor.frameCurrent][0].Y;
+		}
+		else Bones[0].Y = Read16(RAM[AniSeg].Data, rot_offset);
+		rot_offset += 2;
+		
+		if (vProgram.editMode) {
+			Bones[0].Z = TempBones[vCurrentActor.frameCurrent][0].Z;
+		}
+		else Bones[0].Z = Read16(RAM[AniSeg].Data, rot_offset);
+		rot_offset += 2;
+		
+		if (vProgram.animLoad) {
+			dbgprintf(0, MSK_COLORTYPE_INFO, "Animation offset 0x%x", AnimationOffset);
+			dbgprintf(0, MSK_COLORTYPE_INFO, "AniSeg 0x%x", AniSeg);
+			dbgprintf(0, MSK_COLORTYPE_INFO, "X Translation 0x%04x", Bones[0].X);
+			dbgprintf(0, MSK_COLORTYPE_INFO, "Y Translation 0x%04x", Bones[0].Y);
+			dbgprintf(0, MSK_COLORTYPE_INFO, "Z Translation 0x%04x", Bones[0].Z);
+		}
+	
 	}
 
 	Seg = (BoneListListOffset >> 24) & 0xFF;
@@ -480,6 +499,7 @@ void drawLink(unsigned int BoneOffset, unsigned int AnimationOffset, float Scale
 		}
 		_Seg = (BoneOffset >> 24) & 0xFF;
 		BoneOffset &= 0xFFFFFF;
+		//i believe this is translation data but for link it's for the whole model. so just applying the same transform to all bones?
 		Bones[i].X += Read16(RAM[_Seg].Data, BoneOffset);
 		Bones[i].Y += Read16(RAM[_Seg].Data, BoneOffset + 0x2);
 		Bones[i].Z += Read16(RAM[_Seg].Data, BoneOffset + 0x4);
@@ -494,15 +514,28 @@ void drawLink(unsigned int BoneOffset, unsigned int AnimationOffset, float Scale
 
 
 		if( rot_offset ){
-
-			Bones[i].RX = Read16(RAM[AniSeg].Data, rot_offset);
-			rot_offset+=2;
-			Bones[i].RY = Read16(RAM[AniSeg].Data, rot_offset);
-			rot_offset+=2;
-			Bones[i].RZ = Read16(RAM[AniSeg].Data, rot_offset);
+			if (vProgram.editMode) {
+				Bones[i].RX = TempBones[vCurrentActor.frameCurrent][i].RX;
+			}
+			else Bones[i].RX = Read16(RAM[AniSeg].Data, rot_offset);
 			rot_offset+=2;
 
-//			dbgprintf(0, MSK_COLORTYPE_INFO, " Bone %2i (%08X): (%6i %6i %6i) (%2i %2i) %08X", i, BoneOffset, Bones[i].X, Bones[i].Y, Bones[i].Z, Bones[i].Child, Bones[i].Sibling, Bones[i].DList);
+			if (vProgram.editMode) {
+				Bones[i].RY = TempBones[vCurrentActor.frameCurrent][i].RY;
+			}
+			else Bones[i].RY = Read16(RAM[AniSeg].Data, rot_offset);
+			rot_offset+=2;
+
+			if (vProgram.editMode) {
+				Bones[i].RZ = TempBones[vCurrentActor.frameCurrent][i].RZ;
+			}
+			else Bones[i].RZ = Read16(RAM[AniSeg].Data, rot_offset);
+			rot_offset+=2;
+
+			if (vProgram.animLoad) {
+				dbgprintf(0, MSK_COLORTYPE_INFO, " Bone %2i (%08X): (%6x %6x %6x) (%2i %2i) %08X", i, BoneOffset, Bones[i].RX, Bones[i].RY, Bones[i].RZ, Bones[i].Child, Bones[i].Sibling, Bones[i].DList);
+				//dbgprintf(0, MSK_COLORTYPE_INFO, " Bone %2i (%08X): (%6x %6x %6x) (%2i %2i) %08X", i, BoneOffset, Bones[i].X, Bones[i].Y, Bones[i].Z, Bones[i].Child, Bones[i].Sibling, Bones[i].DList);
+			}
 		}
 
 	}

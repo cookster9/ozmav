@@ -230,7 +230,7 @@ void gl_DrawScene(void)
 	gl_SetupScene2D(vProgram.windowWidth, vProgram.windowHeight);
 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
-	char statMsg[256];
+	char statMsg[512];
 
 	hud_Print(0, 0, 0, 0, "");
 
@@ -257,15 +257,34 @@ void gl_DrawScene(void)
 			"Current animation frame: %02i/%02i\n"
 			"Target FPS: %2.0f\n"
 			"%cBone structure: %s\n"
-			"%cAnimation is %s",
-			vCurrentActor.boneSetupCurrent + 1, vCurrentActor.boneSetupTotal + 1,
+			"%cAnimation is %s\n"
+			"%cEdit mode: %s\n"
+			"Current Bone: %d\n"
+			"Current Axis: %d\n"
+			"Current RotX value: %04x\n"
+			"Current RotY value: %04x\n"
+			"Current RotZ value: %04x\n"
+			,
+			vCurrentActor.boneSetupCurrent + 1,
+			vCurrentActor.boneSetupTotal + 1,
 			vCurrentActor.offsetBoneSetup[vCurrentActor.boneSetupCurrent],
-			vCurrentActor.animCurrent + 1, vCurrentActor.animTotal + 1,
+			vCurrentActor.animCurrent + 1,
+			vCurrentActor.animTotal + 1,
 			vCurrentActor.offsetAnims[vCurrentActor.animCurrent],
-			vCurrentActor.frameCurrent + 1, vCurrentActor.frameTotal + 1,
+			vCurrentActor.frameCurrent + 1,
+			vCurrentActor.frameTotal + 1,
 			vProgram.targetFPS,
-			(vProgram.showBones ? '\x90' : '\x91'), (vProgram.showBones ? "shown" : "hidden"),
-			(vProgram.animPlay ? '\x90' : '\x91'), (vProgram.animPlay ? "running..." : "stopped.")
+			(vProgram.showBones ? '\x90' : '\x91'),
+			(vProgram.showBones ? "shown" : "hidden"),
+			(vProgram.animPlay ? '\x90' : '\x91'),
+			(vProgram.animPlay ? "running..." : "stopped."),
+			(vProgram.editMode ? '\x90' : '\x91'),
+			(vProgram.editMode ? "on..." : "off."),
+			vCurrentActor.boneCurrent,
+			vCurrentActor.axisCurrent,
+			TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RX,
+			TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RY,
+			TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RZ
 		);
 		hud_Print(-1, 0, -1, -1, statMsg);
 	}
@@ -280,6 +299,7 @@ void gl_DrawScene(void)
 	//font autowidth test
 	hud_Print(0, 80, -1, -1, " !\"#$%&'()*+,-./\n0123456789:;<=>?\n@ABCDEFGHIJKLMNO\nPQRSTUVWXYZ[\\]^_\n`abcdefghijklmno\npqrstuvwxyz{|}~");
 	#endif
+
 }
 
 int gl_FinishScene()

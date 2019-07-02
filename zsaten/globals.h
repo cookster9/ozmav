@@ -40,6 +40,7 @@ enum { false, true };
 #include "zactors.h"
 #include "zelda.h"
 #include "zold.h"
+#include "editor.h"
 
 #define Read16(Buffer, Offset) \
 	((Buffer[Offset] << 8) | Buffer[(Offset) + 1])
@@ -84,6 +85,8 @@ typedef struct {
 	int debugLevel;
 	bool showBones;
 	bool animPlay;
+	bool animLoad;
+	bool editMode;
 
 	float targetFPS;
 } vProgramStruct;
@@ -125,6 +128,11 @@ typedef struct {
 
 	int frameTotal;
 	int frameCurrent;
+
+	//bone stuff for editing
+	int boneCurrent;
+	int boneTotal;
+	int axisCurrent;
 
 	char oName[128];
 	char eaName[128];
@@ -205,6 +213,16 @@ typedef struct {
 	float R, G, B, A;
 } vRGBAStruct;
 
+typedef struct {
+	//CHANGED THESE TO UNSIGNED FOR BETTER PRINTF OUTPUT MIGHT BE ISSUE LATER IDK
+	unsigned short X, Y, Z;
+	unsigned short RX, RY, RZ;
+	signed char Child, Sibling;
+	unsigned long DList;
+	bool isSet;
+	GLint Matrix[16];
+} tempActorBone;
+
 extern vProgramStruct vProgram;
 extern vCameraStruct vCamera;
 extern vCurrentActorStruct vCurrentActor;
@@ -215,6 +233,7 @@ extern vActorStruct vActors[768];
 extern vObjectStruct vObjects[768];
 
 extern vRGBAStruct vBoneColorFactor;
+extern tempActorBone TempBones[100][100];
 
 void doKbdInput();
 inline void dbgprintf(int Level, int Type, char * Format, ...);

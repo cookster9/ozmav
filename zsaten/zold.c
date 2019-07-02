@@ -101,14 +101,26 @@ processOldObject(u32 first)
 }
 
 int scanOldAnimations(u8 bank)
-{    vCurrentActor.animTotal = -1;
-    int i;    for(i = 0; i < RAM[bank].Size; i += 4) {        if ((!RAM[bank].Data[i])	&&            (RAM[bank].Data[i+1] > 0)	&&            (!RAM[bank].Data[i+2])	&&            (RAM[bank].Data[i+3] > 0)	&&
+{
+    vCurrentActor.animTotal = -1;
+
+    int i;
+    for(i = 0; i < RAM[bank].Size; i += 4) {
+        if ((!RAM[bank].Data[i])	&&
+            (RAM[bank].Data[i+1] > 0)	&&
+            (!RAM[bank].Data[i+2])	&&
+            (RAM[bank].Data[i+3] > 0)	&&
             RDP_CheckAddressValidity(U32(RAM[bank].Data+i+4)) &&
             RDP_CheckAddressValidity(U32(RAM[bank].Data+i+8)) &&
             U32(RAM[bank].Data+i+4) < U32(RAM[bank].Data+i+8) &&
             !(U32(RAM[bank].Data+i+4)&0xF)
-           ){            	vCurrentActor.animTotal++;            	vCurrentActor.offsetAnims[vCurrentActor.animTotal] = (bank << 24) | i;            }    }
-    return 0;
+           ){
+            	vCurrentActor.animTotal++;
+            	vCurrentActor.offsetAnims[vCurrentActor.animTotal] = (bank << 24) | i;
+            }
+    }
+
+    return 0;
 }
 
 void drawOldBone(z_old_limb *limb)

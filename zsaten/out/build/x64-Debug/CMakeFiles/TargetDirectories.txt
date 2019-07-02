@@ -1,3 +1,9 @@
 C:/Users/Andrew/source/repos/ozmav/zsaten/out/build/x64-Debug/CMakeFiles/edit_cache.dir
 C:/Users/Andrew/source/repos/ozmav/zsaten/out/build/x64-Debug/CMakeFiles/zsaten.dir
 C:/Users/Andrew/source/repos/ozmav/zsaten/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Andrew/source/repos/ozmav/zsaten/out/build/x64-Debug/badrdp/CMakeFiles/badrdp.dir
+C:/Users/Andrew/source/repos/ozmav/zsaten/out/build/x64-Debug/badrdp/CMakeFiles/edit_cache.dir
+C:/Users/Andrew/source/repos/ozmav/zsaten/out/build/x64-Debug/badrdp/CMakeFiles/rebuild_cache.dir
+C:/Users/Andrew/source/repos/ozmav/zsaten/out/build/x64-Debug/misaka/CMakeFiles/misaka.dir
+C:/Users/Andrew/source/repos/ozmav/zsaten/out/build/x64-Debug/misaka/CMakeFiles/edit_cache.dir
+C:/Users/Andrew/source/repos/ozmav/zsaten/out/build/x64-Debug/misaka/CMakeFiles/rebuild_cache.dir

@@ -15,6 +15,7 @@
 #define KEY_CAMERA_DOWN_SLOW		'G'
 #define KEY_CAMERA_LEFT_SLOW		'F'
 #define KEY_CAMERA_RIGHT_SLOW		'H'
+#define KEY_SWITCH_EDIT				'E'
 #define KEY_CAMERA_RESET			VK_F9
 #define KEY_ACTOR_ROTATEX_MINUS		VK_UP
 #define KEY_ACTOR_ROTATEX_PLUS		VK_DOWN
@@ -35,6 +36,14 @@
 #define KEY_SWITCH_RAISEFPS			VK_MULTIPLY
 #define KEY_SWITCH_PREVFRAME		VK_SUBTRACT
 #define KEY_SWITCH_NEXTFRAME		VK_ADD
+#define KEY_SWITCH_NEXTBONE			'B'
+#define KEY_SWITCH_PREVBONE			'V'
+#define KEY_SWITCH_BONEX			'X'
+#define KEY_SWITCH_BONEY			'Y'
+#define KEY_SWITCH_BONEZ			'Z'
+#define KEY_ACTOR_BONE_PLUS			'N'
+#define KEY_ACTOR_BONE_MINUS		'M'
+
 
 int WinAPIInit(char * WndTitle, int Width, int Height);
 int WinAPIMain();

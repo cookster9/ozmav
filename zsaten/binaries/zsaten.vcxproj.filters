@@ -40,6 +40,9 @@
     <ClCompile Include="C:\Users\Andrew\source\repos\ozmav\zsaten\zold.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Andrew\source\repos\ozmav\zsaten\editor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\Andrew\source\repos\ozmav\zsaten\CMakeLists.txt" />
@@ -48,8 +51,5 @@
     <Filter Include="Source Files">
       <UniqueIdentifier>{81A642F5-551F-34B4-86F5-C14E05D63AFF}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="EditorDesign.txt" />
   </ItemGroup>
 </Project>

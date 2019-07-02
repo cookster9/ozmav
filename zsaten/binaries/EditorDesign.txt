@@ -8,6 +8,20 @@ Be able to reload the animation on the fly or with some kind of "refresh"
 If saving off, will need the app to look to the new animation location instead of in the ROM
 If directly editing the rom, will need to inject the new data or just use that as the save point
 
+Go into "edit mode". In that state:
+	Prevent changing animation
+		Done
+	Put current animation into a new array/vector that can be used to edit/load from
+		Done
+	Give different controls for switching bone, updating translation/rotation
+	Save the text file when exiting edit mode
+		Done - had to change to unsigned short may be an issue later REMEMBER
+
+For din's fire:
+Program says offset is 0x0713e840
+52 frames
+Can we output the frame data?
+
 Link animation format:
 
 -XYZ Translation-

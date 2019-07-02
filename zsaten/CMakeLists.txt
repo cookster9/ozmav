@@ -27,7 +27,8 @@ render.c
 shared.c
 zactors.c
 zelda.c
-zold.c)
+zold.c
+editor.c)
 
 target_link_libraries(zsaten
 badrdp

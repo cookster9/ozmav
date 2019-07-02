@@ -329,6 +329,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\Andrew\source\repos\ozmav\zsaten\zactors.c" />
     <ClCompile Include="C:\Users\Andrew\source\repos\ozmav\zsaten\zelda.c" />
     <ClCompile Include="C:\Users\Andrew\source\repos\ozmav\zsaten\zold.c" />
+    <ClCompile Include="C:\Users\Andrew\source\repos\ozmav\zsaten\editor.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\Andrew\source\repos\ozmav\zsaten\binaries\ZERO_CHECK.vcxproj">
@@ -349,9 +350,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="EditorDesign.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
