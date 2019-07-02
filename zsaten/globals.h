@@ -132,7 +132,8 @@ typedef struct {
 	//bone stuff for editing
 	int boneCurrent;
 	int boneTotal;
-	int axisCurrent;
+	//int axisCurrent;
+	enum axis {X=1, Y=2, Z=3} axisCurrent;
 
 	char oName[128];
 	char eaName[128];

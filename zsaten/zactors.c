@@ -478,14 +478,6 @@ void drawLink(unsigned int BoneOffset, unsigned int AnimationOffset, float Scale
 		else Bones[0].Z = Read16(RAM[AniSeg].Data, rot_offset);
 		rot_offset += 2;
 		
-		if (vProgram.animLoad) {
-			dbgprintf(0, MSK_COLORTYPE_INFO, "Animation offset 0x%x", AnimationOffset);
-			dbgprintf(0, MSK_COLORTYPE_INFO, "AniSeg 0x%x", AniSeg);
-			dbgprintf(0, MSK_COLORTYPE_INFO, "X Translation 0x%04x", Bones[0].X);
-			dbgprintf(0, MSK_COLORTYPE_INFO, "Y Translation 0x%04x", Bones[0].Y);
-			dbgprintf(0, MSK_COLORTYPE_INFO, "Z Translation 0x%04x", Bones[0].Z);
-		}
-	
 	}
 
 	Seg = (BoneListListOffset >> 24) & 0xFF;
@@ -532,10 +524,6 @@ void drawLink(unsigned int BoneOffset, unsigned int AnimationOffset, float Scale
 			else Bones[i].RZ = Read16(RAM[AniSeg].Data, rot_offset);
 			rot_offset+=2;
 
-			if (vProgram.animLoad) {
-				dbgprintf(0, MSK_COLORTYPE_INFO, " Bone %2i (%08X): (%6x %6x %6x) (%2i %2i) %08X", i, BoneOffset, Bones[i].RX, Bones[i].RY, Bones[i].RZ, Bones[i].Child, Bones[i].Sibling, Bones[i].DList);
-				//dbgprintf(0, MSK_COLORTYPE_INFO, " Bone %2i (%08X): (%6x %6x %6x) (%2i %2i) %08X", i, BoneOffset, Bones[i].X, Bones[i].Y, Bones[i].Z, Bones[i].Child, Bones[i].Sibling, Bones[i].DList);
-			}
 		}
 
 	}

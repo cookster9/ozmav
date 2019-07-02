@@ -2,6 +2,36 @@
 
 #define M_PI 3.14159265358979323846
 
+char linkBones[21][20] = {"Entire rotation",
+"Waist",
+"Waist2",
+"Right Thigh",
+"Right Shin",
+"Right Foot",
+"Left Thigh",
+"Left Shin",
+"Left foot",
+"Torso",
+"Head",
+"Hat",
+"Shirt collar",
+"Left Shoulder",
+"Left forearm",
+"Left hand",
+"Right Shoulder",
+"Right forearm",
+"Right hand",
+"Items",
+"Shirt collar2"};
+
+const char* getAxisName() {
+	switch (vCurrentActor.axisCurrent) {
+	case X: return "X";
+	case Y: return "Y";
+	case Z: return "Z";
+	}
+}
+
 void gl_CreateViewerDLists()
 {
 	vProgram.actorAxisMarkerDL = glGenLists(1);
@@ -259,11 +289,11 @@ void gl_DrawScene(void)
 			"%cBone structure: %s\n"
 			"%cAnimation is %s\n"
 			"%cEdit mode: %s\n"
-			"Current Bone: %d\n"
-			"Current Axis: %d\n"
-			"Current RotX value: %04x\n"
-			"Current RotY value: %04x\n"
-			"Current RotZ value: %04x\n"
+			"Bone: %d (%s)\n"
+			"Axis: %s\n"
+			"RotX value: %04x\n"
+			"RotY value: %04x\n"
+			"RotZ value: %04x\n"
 			,
 			vCurrentActor.boneSetupCurrent + 1,
 			vCurrentActor.boneSetupTotal + 1,
@@ -281,7 +311,8 @@ void gl_DrawScene(void)
 			(vProgram.editMode ? '\x90' : '\x91'),
 			(vProgram.editMode ? "on..." : "off."),
 			vCurrentActor.boneCurrent,
-			vCurrentActor.axisCurrent,
+			linkBones[vCurrentActor.boneCurrent],
+			getAxisName(),
 			TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RX,
 			TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RY,
 			TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RZ

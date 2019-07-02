@@ -491,15 +491,6 @@ void doKbdInput()
 	}
 
 	if (vProgram.editMode) {
-		/*
-		#define KEY_SWITCH_NEXTBONE			'B'
-		#define KEY_SWITCH_PREVBONE			'V'
-		#define KEY_SWITCH_BONEX			'X'
-		#define KEY_SWITCH_BONEY			'Y'
-		#define KEY_SWITCH_BONEZ			'Z'
-		#define KEY_ACTOR_BONE_PLUS			SB_PAGEUP
-		#define KEY_ACTOR_BONE_MINUS		SB_PAGEDOWN
-		*/
 		if (vProgram.key[KEY_SWITCH_NEXTBONE]) {
 			vCurrentActor.boneCurrent++;
 			vProgram.key[KEY_SWITCH_NEXTBONE] = false;
@@ -522,25 +513,33 @@ void doKbdInput()
 		}
 		if (vProgram.key[KEY_ACTOR_BONE_PLUS]) {
 			switch (vCurrentActor.axisCurrent) {
-			case 1:
+			case X:
 				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RX += 256;
-			case 2:
+			case Y:
 				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RY += 256;
-			case 3:
+			case Z:
 				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RZ += 256;
 			}
 			vProgram.key[KEY_ACTOR_BONE_PLUS] = false;
 		}
 		if (vProgram.key[KEY_ACTOR_BONE_MINUS]) {
 			switch (vCurrentActor.axisCurrent) {
-			case 1:
+			case X:
 				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RX -= 256;
-			case 2:
+			case Y:
 				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RY -= 256;
-			case 3:
+			case Z:
 				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RZ -= 256;
 			}
 			vProgram.key[KEY_ACTOR_BONE_MINUS] = false;
+		}
+		if (vProgram.key[KEY_SWITCH_COPY_FORWARD]) {
+			animCopyCurrent();
+			vProgram.key[KEY_SWITCH_COPY_FORWARD] = false;
+		}
+		if (vProgram.key[KEY_SWITCH_COPY_BACKWARD]) {
+			animCopyCurrentBack();
+			vProgram.key[KEY_SWITCH_COPY_BACKWARD] = false;
 		}
 
 	}

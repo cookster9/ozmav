@@ -43,6 +43,8 @@
 #define KEY_SWITCH_BONEZ			'Z'
 #define KEY_ACTOR_BONE_PLUS			'N'
 #define KEY_ACTOR_BONE_MINUS		'M'
+#define KEY_SWITCH_COPY_FORWARD		'C'
+#define KEY_SWITCH_COPY_BACKWARD	'P'
 
 
 int WinAPIInit(char * WndTitle, int Width, int Height);

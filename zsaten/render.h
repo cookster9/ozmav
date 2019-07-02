@@ -4,4 +4,5 @@ void gl_LookAt(const GLdouble p_EyeX, const GLdouble p_EyeY, const GLdouble p_Ey
 void gl_SetupScene2D(int Width, int Height);
 void gl_SetupScene3D(int Width, int Height);
 void gl_DrawScene(void);
+const char* getAxisName();
 int gl_FinishScene();
