@@ -284,13 +284,18 @@ void gl_DrawScene(void)
 			" - Offset: 0x%08X\n"
 			"Showing animation %03i of %03i\n"
 			" - Offset: 0x%08X\n"
+			" - Rom offset: 0x%08X\n" 
 			"Current animation frame: %02i/%02i\n"
+			"%cKey frame? %s\n"
 			"Target FPS: %2.0f\n"
 			"%cBone structure: %s\n"
 			"%cAnimation is %s\n"
 			"%cEdit mode: %s\n"
 			"Bone: %d (%s)\n"
 			"Axis: %s\n"
+			"TransX value: %04x\n"
+			"TransY value: %04x\n"
+			"TransZ value: %04x\n"
 			"RotX value: %04x\n"
 			"RotY value: %04x\n"
 			"RotZ value: %04x\n"
@@ -301,8 +306,11 @@ void gl_DrawScene(void)
 			vCurrentActor.animCurrent + 1,
 			vCurrentActor.animTotal + 1,
 			vCurrentActor.offsetAnims[vCurrentActor.animCurrent],
+			vCurrentActor.offsetAnims[vCurrentActor.animCurrent] + 0x4e5c00, //add 4e5c00 for start of link_animetion. ignore the 07 prefix
 			vCurrentActor.frameCurrent + 1,
 			vCurrentActor.frameTotal + 1,
+			(TempBones[vCurrentActor.frameCurrent][0].isKeyFrame ? '\x90' : '\x91'),
+			(TempBones[vCurrentActor.frameCurrent][0].isKeyFrame ? "yes" : "no."),
 			vProgram.targetFPS,
 			(vProgram.showBones ? '\x90' : '\x91'),
 			(vProgram.showBones ? "shown" : "hidden"),
@@ -313,6 +321,9 @@ void gl_DrawScene(void)
 			vCurrentActor.boneCurrent,
 			linkBones[vCurrentActor.boneCurrent],
 			getAxisName(),
+			TempBones[vCurrentActor.frameCurrent][0].X,
+			TempBones[vCurrentActor.frameCurrent][0].Y,
+			TempBones[vCurrentActor.frameCurrent][0].Z,
 			TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RX,
 			TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RY,
 			TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RZ

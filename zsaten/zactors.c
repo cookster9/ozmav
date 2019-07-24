@@ -558,6 +558,7 @@ void drawBones(unsigned int BoneOffset, unsigned int AnimationOffset, float Scal
 
 	//parse bones
 	BoneCount = RAM[Seg].Data[(BoneOffset) + 4];
+	
 	BoneListListOffset = Read32(RAM[Seg].Data, BoneOffset);
 	if(!RDP_CheckAddressValidity(BoneListListOffset)){
 		return;

@@ -222,6 +222,7 @@ typedef struct {
 	unsigned long DList;
 	bool isSet;
 	GLint Matrix[16];
+	bool isKeyFrame;
 } tempActorBone;
 
 extern vProgramStruct vProgram;

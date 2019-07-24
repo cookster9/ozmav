@@ -97,3 +97,120 @@ void animCopyCurrentBack() {
 		TempBones[frame][vCurrentActor.boneCurrent].RZ = TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RZ;
 	}
 }
+
+void animCopyCurrentOne() {
+	TempBones[vCurrentActor.frameCurrent + 1][0].X = TempBones[vCurrentActor.frameCurrent][0].X;
+	TempBones[vCurrentActor.frameCurrent + 1][0].Y = TempBones[vCurrentActor.frameCurrent][0].Y;
+	TempBones[vCurrentActor.frameCurrent + 1][0].Z = TempBones[vCurrentActor.frameCurrent][0].Z;
+	TempBones[vCurrentActor.frameCurrent + 1][vCurrentActor.boneCurrent].RX = TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RX;
+	TempBones[vCurrentActor.frameCurrent + 1][vCurrentActor.boneCurrent].RY = TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RY;
+	TempBones[vCurrentActor.frameCurrent + 1][vCurrentActor.boneCurrent].RZ = TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RZ;
+}
+
+void animCopyCurrentBackOne() {
+	TempBones[vCurrentActor.frameCurrent - 1][0].X = TempBones[vCurrentActor.frameCurrent][0].X;
+	TempBones[vCurrentActor.frameCurrent - 1][0].Y = TempBones[vCurrentActor.frameCurrent][0].Y;
+	TempBones[vCurrentActor.frameCurrent - 1][0].Z = TempBones[vCurrentActor.frameCurrent][0].Z;
+	TempBones[vCurrentActor.frameCurrent - 1][vCurrentActor.boneCurrent].RX = TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RX;
+	TempBones[vCurrentActor.frameCurrent - 1][vCurrentActor.boneCurrent].RY = TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RY;
+	TempBones[vCurrentActor.frameCurrent - 1][vCurrentActor.boneCurrent].RZ = TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RZ;
+}
+
+void animCalculateKeyframes() {
+	dbgprintf(0, 0, "executing function??");
+	/*
+	loop through all frames
+	if #keyframes =< 1 do nothing
+	if #keyframes > 1
+	Find shortest distance between all axes. absolute value of them subtracted
+	Divide by number of frames distance
+	For number of frames distance, add the quotient to the first frame, save it off, continue
+	*/
+
+	int keyFrameTotal = 0;
+	int rotDist, addDist, frameDist, anyDist;
+	int transDist;
+	int firstKeyFrame = -1;
+	int secondKeyFrame = -1;
+
+	for (int i = 0; i < vCurrentActor.frameTotal; i++) {
+		if (TempBones[i][0].isKeyFrame) keyFrameTotal++;
+	}
+
+	if (keyFrameTotal > 1) {
+		for (int i = 0; i < vCurrentActor.frameTotal; i++) {
+			if (firstKeyFrame == -1) {
+				if (TempBones[i][0].isKeyFrame) firstKeyFrame = i;
+			}
+
+			else if (secondKeyFrame == -1) {
+				if (TempBones[i][0].isKeyFrame) {
+					secondKeyFrame = i;
+					//found both so...
+					frameDist = secondKeyFrame - firstKeyFrame;
+
+					//there's probably a cleverer way to loop through all the axes but I'm not going to try to figure it out
+					//might have to completely rewrite the actor struct
+
+					//X
+					//unsigned shorts go 0-65535
+					transDist = getDist(TempBones[secondKeyFrame][0].X,TempBones[firstKeyFrame][0].X);
+					addDist = transDist / (frameDist);
+					for (int k = firstKeyFrame + 1; k < secondKeyFrame; k++) {
+						TempBones[k][0].X = TempBones[firstKeyFrame][0].X + (addDist * (k - firstKeyFrame));
+					}
+
+					for (int b = 0; b < 20; b++) {
+						rotDist = getDist(TempBones[secondKeyFrame][b].RX,TempBones[firstKeyFrame][b].RX);
+						addDist = rotDist / (frameDist);
+						for (int k = firstKeyFrame + 1; k < secondKeyFrame; k++) {
+							TempBones[k][b].RX = TempBones[firstKeyFrame][b].RX + (addDist * (k - firstKeyFrame));
+						}
+					}
+
+					//Y
+					transDist = getDist(TempBones[secondKeyFrame][0].Y, TempBones[firstKeyFrame][0].Y);
+					addDist = transDist / (frameDist);
+					for (int k = firstKeyFrame + 1; k < secondKeyFrame; k++) {
+						TempBones[k][0].Y = TempBones[firstKeyFrame][0].Y + (addDist * (k - firstKeyFrame));
+					}
+					for (int b = 0; b < 20; b++) {
+						rotDist = getDist(TempBones[secondKeyFrame][b].RY, TempBones[firstKeyFrame][b].RY);
+						addDist = rotDist / (frameDist);
+						for (int k = firstKeyFrame + 1; k < secondKeyFrame; k++) {
+							TempBones[k][b].RY = TempBones[firstKeyFrame][b].RY + (addDist * (k - firstKeyFrame));
+						}
+					}
+
+					//Z
+					transDist = getDist(TempBones[secondKeyFrame][0].Z, TempBones[firstKeyFrame][0].Z);
+					addDist = transDist / (frameDist);
+					for (int k = firstKeyFrame + 1; k < secondKeyFrame; k++) {
+						TempBones[k][0].Z = TempBones[firstKeyFrame][0].Z + (addDist * (k - firstKeyFrame));
+					}
+					for (int b = 0; b < 20; b++) {
+						rotDist = getDist(TempBones[secondKeyFrame][b].RZ, TempBones[firstKeyFrame][b].RZ);
+						addDist = rotDist / (frameDist);
+						for (int k = firstKeyFrame + 1; k < secondKeyFrame; k++) {
+							TempBones[k][b].RZ = TempBones[firstKeyFrame][b].RZ + (addDist * (k - firstKeyFrame));
+						}
+					}
+
+					//clean up for next loop
+					firstKeyFrame = secondKeyFrame;
+					secondKeyFrame = -1;
+				}
+			}
+		}
+	}
+}
+
+//there must be a better/more readable way... but my brain hurts
+int getDist(unsigned short end, unsigned short start) {
+	int dist;
+	int midPoint = 65536 / 2;
+	dist = end - start;
+	if (abs(dist) < midPoint) return dist;
+	else if (dist < 0) return dist + 65536;
+	else return (dist - 65536);
+}

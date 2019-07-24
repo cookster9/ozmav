@@ -45,6 +45,12 @@
 #define KEY_ACTOR_BONE_MINUS		'M'
 #define KEY_SWITCH_COPY_FORWARD		'C'
 #define KEY_SWITCH_COPY_BACKWARD	'P'
+#define KEY_SWITCH_COPY_NEXT		'I'
+#define KEY_SWITCH_COPY_PREV		'O'
+#define KEY_ACTOR_TRANSLATE_PLUS	'J'
+#define KEY_ACTOR_TRANSLATE_MINUS	'U'
+#define KEY_SWITCH_KEYFRAME			'K'
+#define KEY_ACTOR_CALCULATE_FRAMES		'L'
 
 
 int WinAPIInit(char * WndTitle, int Width, int Height);

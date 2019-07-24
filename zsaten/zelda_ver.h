@@ -32,8 +32,8 @@ static vZeldaVersionStruct GameVer[] =
 	{ "THE LEGEND OF ZELDA ", "NZLE", 15, 0, 28, 0x8001CE60, 0x10A6C8, 0x0F9440, 402, 471, "Ocarina of Time Master Quest (E) [Debug Version]" },
 /*	{ "MAJORA'S MASK       ", "NDLE", 0,  1, 31, 0x8001CE60, 0x0,      0x0,      642, 0,   "Majora's Mask (U) [Kiosk Demo]" },
 	{ "ZELDA MAJORA'S MASK ", "NZSP", 1,  1, 49, 0x8001CE60, 0x0,      0x0,      642, 0,   "Majora's Mask (E) [Debug Version]" },
-
+	*/
 	// hacks
 	{ "THE LEGEND OF DEBUG ", "CZLE", 15, 0, 28, 0x8001CE60, 0x10A6C8, 0x0F9440, 402, 471, "Ocarina of Time: Master Quest [Debug Version]" },
-	{ "ZELDA OOT NIGHTMARE ", "NZLE", 15, 0, 28, 0x8001CE60, 0x10A6C8, 0x0F9440, 402, 471, "Ocarina of Time: Master Quest [Debug Version]" }*/
+	//{ "ZELDA OOT NIGHTMARE ", "NZLE", 15, 0, 28, 0x8001CE60, 0x10A6C8, 0x0F9440, 402, 471, "Ocarina of Time: Master Quest [Debug Version]" }*/
 };

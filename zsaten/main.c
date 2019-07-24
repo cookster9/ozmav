@@ -323,15 +323,15 @@ int main(int argc, char **argv)
 
 void doKbdInput()
 {
-	if(vProgram.key[KEY_CAMERA_UP_FAST]) ca_Movement(false, 2.0f);
-	if(vProgram.key[KEY_CAMERA_DOWN_FAST]) ca_Movement(false, -2.0f);
-	if(vProgram.key[KEY_CAMERA_LEFT_FAST]) ca_Movement(true, -2.0f);
-	if(vProgram.key[KEY_CAMERA_RIGHT_FAST]) ca_Movement(true, 2.0f);
+	if(vProgram.key[KEY_CAMERA_UP_FAST]) ca_Movement(false, 0.5f);
+	if(vProgram.key[KEY_CAMERA_DOWN_FAST]) ca_Movement(false, -0.5f);
+	if(vProgram.key[KEY_CAMERA_LEFT_FAST]) ca_Movement(true, -0.5f);
+	if(vProgram.key[KEY_CAMERA_RIGHT_FAST]) ca_Movement(true, 0.5f);
 
-	if(vProgram.key[KEY_CAMERA_UP_SLOW]) ca_Movement(false, 0.5f);
-	if(vProgram.key[KEY_CAMERA_DOWN_SLOW]) ca_Movement(false, -0.5f);
-	if(vProgram.key[KEY_CAMERA_LEFT_SLOW]) ca_Movement(true, -0.5f);
-	if(vProgram.key[KEY_CAMERA_RIGHT_SLOW]) ca_Movement(true, 0.5f);
+	if(vProgram.key[KEY_CAMERA_UP_SLOW]) ca_Movement(false, 0.1f);
+	if(vProgram.key[KEY_CAMERA_DOWN_SLOW]) ca_Movement(false, -0.1f);
+	if(vProgram.key[KEY_CAMERA_LEFT_SLOW]) ca_Movement(true, -0.1f);
+	if(vProgram.key[KEY_CAMERA_RIGHT_SLOW]) ca_Movement(true, 0.1f);
 
 	if(vProgram.key[KEY_ACTOR_ROTATEX_MINUS]) vCamera.actorRotX -= 2.0f;
 	if(vProgram.key[KEY_ACTOR_ROTATEX_PLUS]) vCamera.actorRotX += 2.0f;
@@ -492,11 +492,13 @@ void doKbdInput()
 
 	if (vProgram.editMode) {
 		if (vProgram.key[KEY_SWITCH_NEXTBONE]) {
-			vCurrentActor.boneCurrent++;
+			if (vCurrentActor.boneCurrent >= 20) vCurrentActor.boneCurrent = 0;
+			else vCurrentActor.boneCurrent++;
 			vProgram.key[KEY_SWITCH_NEXTBONE] = false;
 		}
 		if (vProgram.key[KEY_SWITCH_PREVBONE]) {
-			vCurrentActor.boneCurrent--;
+			if (vCurrentActor.boneCurrent > 0) vCurrentActor.boneCurrent--;
+			else vCurrentActor.boneCurrent = 20;
 			vProgram.key[KEY_SWITCH_PREVBONE] = false;
 		}
 		if (vProgram.key[KEY_SWITCH_BONEX]) {
@@ -511,28 +513,67 @@ void doKbdInput()
 			vCurrentActor.axisCurrent = 3;
 			vProgram.key[KEY_SWITCH_BONEZ] = false;
 		}
+
 		if (vProgram.key[KEY_ACTOR_BONE_PLUS]) {
 			switch (vCurrentActor.axisCurrent) {
 			case X:
 				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RX += 256;
+				break;
 			case Y:
 				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RY += 256;
+				break;
 			case Z:
 				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RZ += 256;
+				break;
 			}
 			vProgram.key[KEY_ACTOR_BONE_PLUS] = false;
 		}
+
 		if (vProgram.key[KEY_ACTOR_BONE_MINUS]) {
 			switch (vCurrentActor.axisCurrent) {
 			case X:
 				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RX -= 256;
+				break;
 			case Y:
 				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RY -= 256;
+				break;
 			case Z:
 				TempBones[vCurrentActor.frameCurrent][vCurrentActor.boneCurrent].RZ -= 256;
+				break;
 			}
 			vProgram.key[KEY_ACTOR_BONE_MINUS] = false;
 		}
+
+		if (vProgram.key[KEY_ACTOR_TRANSLATE_PLUS]) {
+			switch (vCurrentActor.axisCurrent) {
+			case X:
+				TempBones[vCurrentActor.frameCurrent][0].X += 256;
+				break;
+			case Y:
+				TempBones[vCurrentActor.frameCurrent][0].Y += 256;
+				break;
+			case Z:
+				TempBones[vCurrentActor.frameCurrent][0].Z += 256;
+				break;
+			}
+			vProgram.key[KEY_ACTOR_TRANSLATE_PLUS] = false;
+		}
+
+		if (vProgram.key[KEY_ACTOR_TRANSLATE_MINUS]) {
+			switch (vCurrentActor.axisCurrent) {
+			case X:
+				TempBones[vCurrentActor.frameCurrent][0].X -= 256;
+				break;
+			case Y:
+				TempBones[vCurrentActor.frameCurrent][0].Y -= 256;
+				break;
+			case Z:
+				TempBones[vCurrentActor.frameCurrent][0].Z -= 256;
+				break;
+			}
+			vProgram.key[KEY_ACTOR_TRANSLATE_MINUS] = false;
+		}
+
 		if (vProgram.key[KEY_SWITCH_COPY_FORWARD]) {
 			animCopyCurrent();
 			vProgram.key[KEY_SWITCH_COPY_FORWARD] = false;
@@ -541,6 +582,26 @@ void doKbdInput()
 			animCopyCurrentBack();
 			vProgram.key[KEY_SWITCH_COPY_BACKWARD] = false;
 		}
+		if (vProgram.key[KEY_SWITCH_COPY_NEXT]) {
+			animCopyCurrentOne();
+			vProgram.key[KEY_SWITCH_COPY_NEXT] = false;
+		}
+		if (vProgram.key[KEY_SWITCH_COPY_PREV]) {
+			animCopyCurrentBackOne();
+			vProgram.key[KEY_SWITCH_COPY_PREV] = false;
+		}
+
+		if (vProgram.key[KEY_SWITCH_KEYFRAME]) {
+			if (TempBones[vCurrentActor.frameCurrent][0].isKeyFrame) TempBones[vCurrentActor.frameCurrent][0].isKeyFrame = false;
+			else TempBones[vCurrentActor.frameCurrent][0].isKeyFrame = true; //I'm sure there's a better way but I'll just hack it to use bone 0 of the frame
+			vProgram.key[KEY_SWITCH_KEYFRAME] = false;
+		}
+
+		if (vProgram.key[KEY_ACTOR_CALCULATE_FRAMES]) {
+			animCalculateKeyframes();
+			vProgram.key[KEY_ACTOR_CALCULATE_FRAMES] = false;
+		}
+
 
 	}
 }
