@@ -24,9 +24,9 @@ static vZeldaVersionStruct GameVer[] =
 	{ "THE LEGEND OF ZELDA ", "NZLP", 0,  0, 28, 0x8001CE60, 0x0,      0x0,      402, 471, "Ocarina of Time (E) [v1.0]" },
 	{ "THE LEGEND OF ZELDA ", "NZLP", 1,  0, 28, 0x8001CE60, 0x0,      0x0,      402, 471, "Ocarina of Time (E) [v1.1]" },
 	{ "THE MASK OF MUJURA  ", "NZSJ", 0,  1, 28, 0x8001CE60, 0x0,      0x0,      642, 0,   "Majora's Mask (J) [v1.0]" },
-	{ "THE MASK OF MUJURA  ", "NZSJ", 1,  1, 28, 0x8001CE60, 0x0,      0x0,      642, 0,   "Majora's Mask (J) [v1.1]" },
-	{ "ZELDA MAJORA'S MASK ", "NZSE", 0,  1, 31, 0x8001CE60, 0x0,      0x0,      642, 0,   "Majora's Mask (U) [v1.0]" },
-	{ "ZELDA MAJORA'S MASK ", "NZSP", 0,  1, 49, 0x8001CE60, 0x0,      0x0,      642, 0,   "Majora's Mask (E) [v1.0]" },
+	{ "THE MASK OF MUJURA  ", "NZSJ", 1,  1, 28, 0x8001CE60, 0x0,      0x0,      642, 0,   "Majora's Mask (J) [v1.1]" },*/
+	{ "ZELDA MAJORA'S MASK ", "NZSE", 0,  1, 31, 0x800A5AC0, 0x11CC70, 0x109510, 673, 690,   "Majora's Mask (U) [v1.0]" },
+	/*{ "ZELDA MAJORA'S MASK ", "NZSP", 0,  1, 49, 0x8001CE60, 0x0,      0x0,      642, 0,   "Majora's Mask (E) [v1.0]" },
 */
 	// demos, developer builds
 	{ "THE LEGEND OF ZELDA ", "NZLE", 15, 0, 28, 0x8001CE60, 0x10A6C8, 0x0F9440, 402, 471, "Ocarina of Time Master Quest (E) [Debug Version]" },

@@ -325,14 +325,22 @@ found:
 	zl_DMAGetFilename(File.Filename, File.ID);
 
 	return File;
+	
 }
 
 int zl_GetFilenameTable()
 {
 	dbgprintf(3, MSK_COLORTYPE_OKAY, "[DEBUG] %s();\n", __FUNCTION__);
-
-	vZeldaInfo.bootfile = zl_DMAGetFile(1);
-
+	if (vZeldaInfo.gameType) 
+	{
+		vZeldaInfo.bootfile.PStart = 0x3000000;
+		vZeldaInfo.bootfile.PEnd = 0x00000000;
+		vZeldaInfo.bootfile.VEnd = 0x3006491;
+		
+	}
+	else {
+		vZeldaInfo.bootfile = zl_DMAGetFile(1);
+	}
 	char Check[8];
 	int Pos = vZeldaInfo.bootfile.PStart, MaxPos = vZeldaInfo.bootfile.PEnd;
 	if(vZeldaInfo.bootfile.PEnd == 0 || vZeldaInfo.bootfile.PEnd == 0xFFFFFFFF) MaxPos = vZeldaInfo.bootfile.VEnd;
@@ -342,7 +350,7 @@ int zl_GetFilenameTable()
 		Check[7] = 0x00;
 		if(!strcmp(Check, "makerom")) {
 			vZeldaInfo.filenameTableOffset = Pos;
-			dbgprintf(2, MSK_COLORTYPE_OKAY, "[DEBUG] Filename table found at 0x%08X.\n", vZeldaInfo.filenameTableOffset);
+			dbgprintf(0, MSK_COLORTYPE_OKAY, "[DEBUG] Filename table found at 0x%08X.\n", vZeldaInfo.filenameTableOffset);
 			vZeldaInfo.hasFilenames = true;
 			break;
 		}
@@ -387,7 +395,7 @@ int zl_GetDMATable()
 	}
 
 	vZeldaInfo.DMATableOffset = (Pos + 0x30);
-	dbgprintf(2, MSK_COLORTYPE_OKAY, "[DEBUG] DMA table found at 0x%08X.\n", vZeldaInfo.DMATableOffset);
+	dbgprintf(0, MSK_COLORTYPE_OKAY, "[DEBUG] DMA table found at 0x%08X.\n", vZeldaInfo.DMATableOffset);
 
 	vZeldaInfo.DMATable = zl_DMAGetFile(2);
 

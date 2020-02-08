@@ -52,4 +52,7 @@
       <UniqueIdentifier>{81A642F5-551F-34B4-86F5-C14E05D63AFF}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt" />
+  </ItemGroup>
 </Project>
